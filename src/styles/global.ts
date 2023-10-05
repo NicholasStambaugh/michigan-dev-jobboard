@@ -86,9 +86,9 @@ const globalStyle = createGlobalStyle`
   .center-container {
     display: flex;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background}
-    flex-direction: row; /* Arrange items in a row */ /* Distribute space between items */ /* Center vertically */
-    max-width: 1280px;
-    margin-top: 150px;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    margin-top: 800px; /* Allow the content to grow and take available space */
   }
   
   .content {

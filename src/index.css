@@ -12,6 +12,8 @@
   place-items: center;
 }
 
+
+
 a {
   font-weight: 500;
   color: #0078d4; /* Modern link color */
@@ -35,9 +37,13 @@ a:hover {
   font-size: 1rem;
 }
 
-.linkedin-button {
-  
+.rpi-link-2 {
+  color: rgb(0, 211, 200);
+  font-size: 2.5rem; /* Slightly smaller font size */
+  line-height: 1.2; /* Improved line height */
+  place-items: center;
 }
+
 
 h1 {
   font-size: 2.5rem; /* Slightly smaller font size */
@@ -191,7 +197,25 @@ header {
 header .header-logo-top-left {
   display: flex; /* Align items to the sides */
   align-items: center;
-  margin-right: 800px; /* Center vertically */
+  margin-right: 0; /* Center vertically */
+}
+
+@media screen and (max-width: 768px) {
+  header .header-logo-top-left {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header .header-logo-top-left {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header .header-logo-top-left {
+    margin-right: 30%;
+  }
 }
 
 /* Styles for the buttons on the right side */
@@ -212,6 +236,32 @@ header .header-logo-top-left {
   }
   .right-logo-top-right {
     margin-left: 0; /* Remove margin for smaller screens */
+  }
+}
+
+/* Media query for medium screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 0.75rem;
+  }
+  .header-logo-top-left h1 {
+    font-size: 1.75rem;
+  }
+  .right-logo-top-right {
+    margin-left: 10%;
+  }
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1025px) {
+  header {
+    padding: 1rem;
+  }
+  .header-logo-top-left h1 {
+    font-size: 2rem;
+  }
+  .right-logo-top-right {
+    margin-left: 20%;
   }
 }
 
@@ -258,6 +308,15 @@ header .header-logo-top-left {
   margin: 1rem; /* Reduced margin for better spacing */
   place-items: center;
   transition: color 0.3s ease;
+  @media screen and (max-width: 1080px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 }
 
 .login-button-LOGIN {
@@ -267,6 +326,15 @@ header .header-logo-top-left {
   margin: 1rem; /* Reduced margin for better spacing */
   place-items: center;
   transition: color 0.3s ease;
+  @media screen and (max-width: 1080px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 }
 
 .grey-box { 
@@ -286,7 +354,7 @@ header .header-logo-top-left {
 }
 
 .company-logos img {
-  max-width: 400px; /* Adjust the maximum width as needed */
+  max-width: 500px; /* Adjust the maximum width as needed */
   margin: 0 10px; /* Add spacing between logos */
 }
 
@@ -302,7 +370,7 @@ header .header-logo-top-left {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   a {
     font-size: 1.3rem;
   }
@@ -327,8 +395,8 @@ header .header-logo-top-left {
   /* Adjust other styles for smaller screens */
 }
 
-/* Media query for screens smaller than 576px */
-@media screen and (max-width: 576px) {
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
   a {
     font-size: 1.2rem;
   }
@@ -375,6 +443,81 @@ header .header-logo-top-left {
   .button-learn {
     font-size: 0.8rem;
   }
+  
 
   /* Adjust other styles for very small screens */
 }
+
+@media (min-width: 668px) 
+{  
+ 	html, body { margin: 72px; } 
+	h1 { font-size: 60px;  } 
+	p { font-size: 30px;  } 
+} 
+@media (max-width: 667px) 
+{ 
+	html, body { margin: 36px; } 
+	h1 { font-size: 36px; } 
+	p { font-size: 24px;  } 
+} 
+@media (max-width: 375px) 
+{ 
+	html, body { margin: 12px; } 
+	h1 { font-size: 24px;  } 
+	p { font-size: 16px;  } 
+} 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.profile-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+}
+
+.profile-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.profile-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+  font-weight: 200;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+
+

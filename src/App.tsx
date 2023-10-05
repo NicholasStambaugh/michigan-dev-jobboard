@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
 import Footer from './components/Footer/index.js';
+import ProfileCard from './components/profilecards/index.js';
 
 function App() {
   const { theme, themeToggler } = useThemeMode();
@@ -22,7 +23,8 @@ function App() {
                   <p>Find Jobs. Hire Devs.</p>
               </div>
               <div className="right-logo-top-right">
-                  <a className='login-button-header'>Create Account</a>
+                  <a className='login-button-LOGIN' onClick={() => window.location.href='/developers'}>Developers</a>
+                  <a className='login-button-LOGIN' onClick={() => window.location.href='/'}>Pricing</a>
                   <a className='login-button-LOGIN' onClick={() => window.location.href='/login'} >Login</a>
               </div>
             <TogglerButton themeToggler={themeToggler} />
@@ -62,7 +64,6 @@ function App() {
           <input type="email" placeholder="✉️ Email" />
           <button>Sign Up →</button>
         </div>
-        <div className="center-line"></div>
         <div className="grey-box">
   <h2>Trusted by developers and companies at...</h2>
   <div className="company-logos">
@@ -74,12 +75,14 @@ function App() {
     <img src="../netmagazine.svg" alt="Company 3 Logo" />
     <img src="../stackoverflow.svg" alt="Company 3 Logo" />
   </div>
-  <br></br>
+  <div className="center-line"></div>
   <div className='developer-cards-home'>
-    <h2>Developers looking right now...</h2>
+    <h2><a className='rpi-link-2' onClick={() => window.location.href='/developers'}>Developers</a> looking right now...</h2>
   </div>
 </div>
-<Footer />
+          <ProfileCard name={'Nick S.'} image={'./public/73977662.png'} title={'BI Developer'} description={''} key={'index'} />
+          <ProfileCard name={'Nick S.'} image={'./public/73977662.png'} title={'BI Developer'}  description=''/>
+        <Footer />
       </ThemeProvider>
     </ThemeContext>
   );
