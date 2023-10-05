@@ -5,7 +5,6 @@
    ## Table of Contents
 
    - [Installation](#installation)
-   - [Usage](#usage)
    - [Contributing](#contributing)
    - [License](#license)
    - [React-TS Help](#React)
@@ -23,17 +22,13 @@
    
    `yarn run dev`
 
-   ## Usage
-
-   Instructions for using the project and any relevant examples.
-
    ## Contributing
 
-   Guidelines for contributing to the project.
+   Fork first, please.
 
    ## License
 
-   Information about the project's license.
+   Apache License 2.0
 
 
 ## React
