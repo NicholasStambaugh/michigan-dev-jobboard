@@ -28,6 +28,16 @@ a:hover {
   touch-action: manipulation; /* Hover color */
 }
 
+.rpi-link {
+  color: rgb(0, 211, 200);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.linkedin-button {
+  
+}
 
 h1 {
   font-size: 2.5rem; /* Slightly smaller font size */
@@ -75,7 +85,6 @@ button {
   opacity: 1;
   outline: 0 solid transparent;
   padding: 0.7rem;
-  -webkit-user-select: none;
   touch-action: manipulation;
   width: fit-content;
   word-break: break-word;
@@ -121,6 +130,43 @@ button:hover {
   text-decoration: underline;
 }
 
+.need-account p {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.0rem; 
+  align-items: center;
+  margin-left: 5%;
+  transition: color 0.3s ease;
+}
+
+.email-form {
+  display: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 29%;
+
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: #00BBD9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background-color: #0056b3;
+}
 /* Default styles for header */
 header {
   position: fixed;
@@ -151,7 +197,8 @@ header .header-logo-top-left {
 /* Styles for the buttons on the right side */
 .right-logo-top-right {
   display: flex; /* Align items to the sides */
-  align-items: center; /* Center vertically */
+  align-items: center;
+  margin-left: 20%; /* Center vertically */
 }
 
 /* Media query for smaller screens */
@@ -199,9 +246,9 @@ header .header-logo-top-left {
 }
 
 .hero-img {
-  max-width: 140%; /* Ensure the image scales appropriately */
+  max-width: 130%; /* Ensure the image scales appropriately */
   height: 200%;
-  margin: 0 0 0 -100px; /* Maintain aspect ratio */
+  margin: 0 0 0 -180px; /* Maintain aspect ratio */
 }
 
 .login-button-header {

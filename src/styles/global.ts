@@ -58,9 +58,29 @@ const globalStyle = createGlobalStyle`
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
+  label {
+    font-size: .975rem;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
   login-button-header {
     font-size: .975rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+  .container-fluid footer  {
+    font-size: .975rem;
+    color: ${({ theme }: GlobalThemeProps) => theme.text}
+  }
+
+  .center-line::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    margin: 0 15px 5px 50px;
+    background-color: ${({ theme }: GlobalThemeProps) => theme.text};
+    margin: 2rem auto;
   }
   
   .center-container {
@@ -72,7 +92,8 @@ const globalStyle = createGlobalStyle`
   }
   
   .content {
-    flex-grow: 1; /* Allow the content to grow and take available space */
+    flex-grow: 1;
+    margin-top: 200px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 

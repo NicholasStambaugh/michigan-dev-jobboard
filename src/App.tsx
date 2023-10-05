@@ -5,10 +5,12 @@ import ThemeContext from './contexts/ThemeContext';
 import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
+import Footer from './components/Footer/index.js';
 
 function App() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  console.log('Welcome to miDev :). Send resume to nastambaugh@gmail.com to work for us ♥♥♥')
 
   return (
     <ThemeContext>
@@ -21,7 +23,7 @@ function App() {
               </div>
               <div className="right-logo-top-right">
                   <a className='login-button-header'>Create Account</a>
-                  <a className='login-button-LOGIN'>Login</a>
+                  <a className='login-button-LOGIN' onClick={() => window.location.href='/login'} >Login</a>
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
@@ -29,7 +31,9 @@ function App() {
           <div className="content">
           <div className="card">
             <div className='header-text'>
-                  <a href='#developer-cards-home'>Hire Michigan Developers</a>
+              {/* Not working properly right now (scroll down screen)*/}
+                  <a onClick={() => window.location.href='#developer-cards-home'}>Hire Michigan Developers 🚀💼</a>
+                  <div className="center-line"></div>
                   <p>The miDev job board empowers talented developers<br></br>in Michigan to find their next gig effortlessly.</p>
               </div>
                 </div>
@@ -52,6 +56,13 @@ function App() {
         </div>
         <button role="button">Create an Account</button>
         <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button>
+        <div className="center-line"></div>
+        <div className="email-form">
+        <p>Sign Up For Weekly Job and Market Reports!</p>
+          <input type="email" placeholder="✉️ Email" />
+          <button>Sign Up →</button>
+        </div>
+        <div className="center-line"></div>
         <div className="grey-box">
   <h2>Trusted by developers and companies at...</h2>
   <div className="company-logos">
@@ -61,11 +72,14 @@ function App() {
     <img src="../ruby.svg" alt="Company 3 Logo" />
     <img src="../python.svg" alt="Company 3 Logo" />
     <img src="../netmagazine.svg" alt="Company 3 Logo" />
+    <img src="../stackoverflow.svg" alt="Company 3 Logo" />
   </div>
+  <br></br>
   <div className='developer-cards-home'>
     <h2>Developers looking right now...</h2>
   </div>
 </div>
+<Footer />
       </ThemeProvider>
     </ThemeContext>
   );

@@ -3,13 +3,14 @@ import React from 'react';
 export class Footer extends React.Component {
     render() {
       return (
+        
         <footer>
           <div className="container-fluid footer">
             <div className="row">
               <div className="col-md-12">
                 <ul className="pull-right list-unstyled">
                   <li>
-                      <a>Contact Us!</a>
+                      Contact Us!
                   </li>
                   <li>
                       © Nick Stambaugh {new Date().getFullYear()}
@@ -22,3 +23,5 @@ export class Footer extends React.Component {
       )
     }
   }
+
+export default Footer;  
