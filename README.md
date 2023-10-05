@@ -1,4 +1,42 @@
-# React + TypeScript + Vite
+   # miDev
+
+  The first job board for developers in Michigan.
+
+   ## Table of Contents
+
+   - [Installation](#installation)
+   - [Usage](#usage)
+   - [Contributing](#contributing)
+   - [License](#license)
+   - [React-TS Help](#React)
+
+   ## Installation
+
+   `git clone https://github.com/NicholasStambaugh/michigan-dev-jobboard`
+   
+   `npm install`
+   
+   `npm start`
+   
+   ### RECOMMENDED
+   `yarn add`
+   
+   `yarn run dev`
+
+   ## Usage
+
+   Instructions for using the project and any relevant examples.
+
+   ## Contributing
+
+   Guidelines for contributing to the project.
+
+   ## License
+
+   Information about the project's license.
+
+
+## React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
