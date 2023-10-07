@@ -1,6 +1,5 @@
-import { HiMoon } from 'react-icons/hi';
+import { PiMoonStarsFill } from 'react-icons/pi';
 import { BsBrightnessHighFill } from 'react-icons/bs';
-
 import * as S from './styles';
 
 interface ThemeTogglerProps {
@@ -21,7 +20,7 @@ function TogglerButton({ themeToggler }: ThemeTogglerProps) {
         <S.Icons className="slider round">
           {window.localStorage.getItem('theme') !== 'light' ? (
             <>
-              <HiMoon style={{ marginLeft: '6.3px', height: '10px' }} />
+              <PiMoonStarsFill style={{ marginLeft: '6.3px' }} />
             </>
           ) : (
             <>

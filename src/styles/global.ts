@@ -24,8 +24,8 @@ const globalStyle = createGlobalStyle`
 
   body  {
     -webkit-font-smoothing: antialiased;
-    height: 100vh;
-    width: 50vw;
+    height: calc(100vh - 100px);
+    width: 100%;
     margin: 0 auto;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
     display: flex;
@@ -41,6 +41,7 @@ const globalStyle = createGlobalStyle`
   h2 {
     font-size: 3.375rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
+    align-text: center;
   }
 
   h3 {
@@ -50,6 +51,11 @@ const globalStyle = createGlobalStyle`
 
   a {
     font-size: 3.375rem;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+ li {
+    font-size: 1.375rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
@@ -68,9 +74,10 @@ const globalStyle = createGlobalStyle`
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
-  .container-fluid footer  {
+  footer  {
     font-size: .975rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text}
+    align-items: center;
   }
 
   .center-line::after {
@@ -83,17 +90,10 @@ const globalStyle = createGlobalStyle`
     margin: 2rem auto;
   }
   
-  .center-container {
-    display: flex;
-    background-color: ${({ theme }: GlobalThemeProps) => theme.background}
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    margin-top: 800px; /* Allow the content to grow and take available space */
-  }
   
   .content {
     flex-grow: 1;
-    margin-top: 200px; /* Allow the content to grow and take available space */
+    margin-top: 300px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
@@ -108,7 +108,62 @@ const globalStyle = createGlobalStyle`
     margin-bottom: 1rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
+
+  label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;;
+  }
+
+  login-card-form {
+    width: 100%;
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    color: ${({ theme }: GlobalThemeProps) => theme.text}
+  }
   
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+  }
+
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 2.375rem;
+    }
+    h2 {
+      font-size: 2.375rem;
+    }
+    a {
+      font-size: 2.375rem;
+    }
+    li {
+      font-size: 1.125rem;
+    }
+    p {
+      font-size: .875rem;
+    }
+    label {
+      font-size: .875rem;
+    }
+    login-button-header {
+      font-size: .875rem;
+    }
+    footer {
+      font-size: .875rem;
+    }
+    .center-line::after {
+      width: 40%;
+      margin: 0 15px 5px 30px;
+    }
+    .grey-box h2 {
+      font-size: 1.125rem;
+    }
+    label {
+      font-size: 1.125rem;
+    }
+  }
+
 `;
 
 export default withTheme(globalStyle);

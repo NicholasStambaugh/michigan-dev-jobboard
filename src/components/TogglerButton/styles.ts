@@ -4,8 +4,9 @@ export const Container = styled.div`
   .switch {
     position: relative;
     display: inline-block;
-    width: 3.5rem;
-    height: 1.5rem;
+    width: 3.9rem;
+    height: 1.9rem;
+    margin-top: 1rem;
   }
 
   .switch input {
@@ -25,7 +26,7 @@ export const Container = styled.div`
     bottom: 0;
     background-color: ${({ theme }) => theme.background};
     -webkit-transition: 0.2s;
-    transition: 0.2s;
+    transition: 0.4s;
     box-shadow: 0 0 2px ${({ theme }) => theme.text};
   }
 
@@ -53,7 +54,7 @@ export const Container = styled.div`
 
   /* Rounded sliders */
   .slider.round {
-    border-radius: 34px;
+    border-radius: 55px;
   }
 
   .slider.round:before {

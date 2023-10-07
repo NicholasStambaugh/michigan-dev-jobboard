@@ -5,35 +5,11 @@ import ThemeContext from 'C:/Users/stambaughn/michigan-dev-jobboard/src/contexts
 import { lightTheme, darkTheme } from 'C:/Users/stambaughn/michigan-dev-jobboard/src/styles/themes.ts';
 import useThemeMode from 'C:/Users/stambaughn/michigan-dev-jobboard/src/hooks/useThemeMode.ts';
 import 'C:/Users/stambaughn/michigan-dev-jobboard/src/assets/js/header';
-import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Signup() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const navigate = useNavigate();
-  const handleLogin = () => {
-    fetch('http://localhost:3000/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        username: 'test',
-        password: 'test',
-      }),
-    })
-    .then(response => {
-      if (response.ok) {
-        // If login is successful, navigate to the developer page
-        navigate('./developers');
-      } else {
-        throw new Error('Failed to login');
-      }
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  };
+
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
@@ -43,29 +19,30 @@ function Login() {
               <a onClick={() => window.location.href='/'}>miDev</a>
                   <p>Find Jobs. Hire Devs.</p>
               </div>
-              <div className="right-logo-top-right">
-                  <a className='login-button-header' onClick={() => window.location.href='/signup'}>Create Account</a>
-                  <a className='login-button-LOGIN'>Login</a>
-              </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
-          <div className='login-card-form'>
+          <div className='signup-card-form'>
         <div className="card">
           <form>
+          <label htmlFor="fullname">Personal Name:</label>
+            <input type="username" id="username" name="username" placeholder='Name'/><br></br>
+            <label htmlFor="email">Email:</label>
+            <input type="username" id="username" name="username" placeholder='Email'/><br></br>
             <label htmlFor="username">Username:</label>
             <input type="username" id="username" name="username" placeholder='username'/><br></br>
             <label htmlFor="password" placeholder='Password'>Password:</label>
             <input type="password" id="password" name="password" placeholder='password'/><br></br>
-            <button type="submit" onClick={handleLogin}>Login</button>
-            <div className="center-line"></div>
-          <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div>
+            <label htmlFor="confirm-password" placeholder='Confirm Password'>Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder='confirm password'/><br></br>
+            <button type="submit">Submit</button>
           </form>
           </div>
+          <div className="center-line"></div>
+          <div className='need-account'><p>Already have an account?<a className='rpi-link' onClick={() => window.location.href='/login'} > Login here.</a></p></div>
         </div>
       </ThemeProvider>
     </ThemeContext>
   );
 }
 
-export default Login;
-
+export default Signup;

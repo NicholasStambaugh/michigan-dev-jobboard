@@ -19,7 +19,8 @@
     "react-login-page": "^1.0.1",
     "react-router-dom": "^6.16.0",
     "react-transition-group": "^4.4.5",
-    "styled-components": "^6.0.8"
+    "styled-components": "^6.0.8",
+    "topbar": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

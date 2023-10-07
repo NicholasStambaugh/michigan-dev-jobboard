@@ -6,7 +6,6 @@ import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
 import Footer from './components/Footer/index.js';
-import ProfileCard from './components/profilecards/index.js';
 
 function App() {
   const { theme, themeToggler } = useThemeMode();
@@ -17,6 +16,7 @@ function App() {
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
+        <div className="container">
           <header className="header" id='header'>
               <div className="header-logo-top-left">
               <a onClick={() => window.location.href='/'}>miDev</a>
@@ -24,19 +24,18 @@ function App() {
               </div>
               <div className="right-logo-top-right">
                   <a className='login-button-LOGIN' onClick={() => window.location.href='/developers'}>Developers</a>
-                  <a className='login-button-LOGIN' onClick={() => window.location.href='/'}>Pricing</a>
+                  <a className='login-button-LOGIN' onClick={() => window.location.href='/pricing'}>Pricing</a>
                   <a className='login-button-LOGIN' onClick={() => window.location.href='/login'} >Login</a>
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
       <div className="center-container">
           <div className="content">
-          <div className="card">
             <div className='header-text'>
               {/* Not working properly right now (scroll down screen)*/}
-                  <a onClick={() => window.location.href='#developer-cards-home'}>Hire Michigan Developers 🚀💼</a>
+                  <a onClick={() => window.location.href='/developers'}>Hire Michigan Developers 🚀</a>
                   <div className="center-line"></div>
-                  <p>The miDev job board empowers talented developers<br></br>in Michigan to find their next gig effortlessly.</p>
+                  <p style={{marginLeft: '10px'}}>The miDev job board empowers talented developers<br></br>in Michigan to find their next gig effortlessly.</p>
               </div>
                 </div>
                 <div className='text-image-hero'>
@@ -55,8 +54,9 @@ function App() {
                       </div>
                       </div>
                   </div>
-        </div>
-        <button role="button">Create an Account</button>
+               </div>
+        <button role="button" onClick={() => window.location.href='/signup'}>Create an Account</button>
+        <button className="button-devs" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
         <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button>
         <div className="center-line"></div>
         <div className="email-form">
@@ -75,14 +75,7 @@ function App() {
     <img src="../netmagazine.svg" alt="Company 3 Logo" />
     <img src="../stackoverflow.svg" alt="Company 3 Logo" />
   </div>
-  <div className="center-line"></div>
-  <div className='developer-cards-home'>
-    <h2><a className='rpi-link-2' onClick={() => window.location.href='/developers'}>Developers</a> looking right now...</h2>
-  </div>
 </div>
-          <ProfileCard name={'Nick S.'} image={'./public/73977662.png'} title={'BI Developer'} description={''} key={'index'} />
-          <ProfileCard name={'Nick S.'} image={'./public/73977662.png'} title={'BI Developer'}  description=''/>
-        <Footer />
       </ThemeProvider>
     </ThemeContext>
   );
