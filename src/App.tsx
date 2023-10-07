@@ -5,7 +5,6 @@ import ThemeContext from './contexts/ThemeContext';
 import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
-import Footer from './components/Footer/index.js';
 
 function App() {
   const { theme, themeToggler } = useThemeMode();
@@ -55,7 +54,7 @@ function App() {
                       </div>
                   </div>
                </div>
-        <button role="button" onClick={() => window.location.href='/signup'}>Create an Account</button>
+        <button className='button-devs' onClick={() => window.location.href='/signup'}>Create an Account</button>
         <button className="button-devs" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
         <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button> 
         <div className="center-line"></div>

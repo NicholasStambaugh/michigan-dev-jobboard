@@ -1,10 +1,9 @@
 import { ThemeProvider } from 'styled-components';
-import TogglerButton from 'C:/Users/stambaughn/michigan-dev-jobboard/src/components/TogglerButton/index.tsx';
-import GlobalStyle from 'C:/Users/stambaughn/michigan-dev-jobboard/src/styles/global.ts';
-import ThemeContext from 'C:/Users/stambaughn/michigan-dev-jobboard/src/contexts/ThemeContext/index.tsx';
-import { lightTheme, darkTheme } from 'C:/Users/stambaughn/michigan-dev-jobboard/src/styles/themes.ts';
-import useThemeMode from 'C:/Users/stambaughn/michigan-dev-jobboard/src/hooks/useThemeMode.ts';
-import 'C:/Users/stambaughn/michigan-dev-jobboard/src/assets/js/header';
+import TogglerButton from '../../components/TogglerButton/index.tsx';
+import GlobalStyle from '../../styles/global.ts';
+import ThemeContext from '../../contexts/ThemeContext/index.tsx';
+import { lightTheme, darkTheme } from '../../styles/themes.ts';
+import useThemeMode from '../../hooks/useThemeMode.ts';
 
 function Signup() {
   const { theme, themeToggler } = useThemeMode();

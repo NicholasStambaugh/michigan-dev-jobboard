@@ -1,10 +1,10 @@
 import { ThemeProvider } from 'styled-components';
-import TogglerButton from 'C:/Users/stambaughn/michigan-dev-jobboard/src/components/TogglerButton/index.tsx';
-import GlobalStyle from 'C:/Users/stambaughn/michigan-dev-jobboard/src/styles/global.ts';
-import ThemeContext from 'C:/Users/stambaughn/michigan-dev-jobboard/src/contexts/ThemeContext/index.tsx';
-import { lightTheme, darkTheme } from 'C:/Users/stambaughn/michigan-dev-jobboard/src/styles/themes.ts';
-import useThemeMode from 'C:/Users/stambaughn/michigan-dev-jobboard/src/hooks/useThemeMode.ts';
-import 'C:/Users/stambaughn/michigan-dev-jobboard/src/assets/js/header';
+import TogglerButton from '../../components/TogglerButton/index.tsx';
+import GlobalStyle from '../../styles/global.ts';
+import ThemeContext from '../../contexts/ThemeContext/index.tsx';
+import { lightTheme, darkTheme } from '../../styles/themes.ts';
+import useThemeMode from '../../hooks/useThemeMode.ts';
+import '../../assets/js/header';
 
 function AboutUs() {
   const { theme, themeToggler } = useThemeMode();
@@ -39,9 +39,9 @@ function AboutUs() {
                   <p>miDev was created by <a className='rpi-link' href='https://www.nickstambaugh.com'>Nick Stambaugh</a> in October 2023. 
           <br></br><br></br>After being fed up with traditional job boards, 
                   Nick created miDev to focus<br></br> a growing community of tech hiring managers and developers in Michigan around a singular networking platform.</p>
-                  <div className="center-line"></div>
-                  <h3>Problem Solver</h3>
-                  <div className='styled-table-container'>
+      <div className="center-line"></div>
+        <h3>Fixing Hiring Problems</h3>
+      <div className='styled-table-container'>
         <table className="styled-table">
           <thead>
             <tr>
@@ -51,31 +51,51 @@ function AboutUs() {
           </thead>
           
           <tbody>
-            <tr className="active-row">
-              <td>Expensive Recruiters</td>
-              <td>We reduce your hiring costs. Recruiters can charge upwards to 30% or more for their services. With us, you pay no fees up front. Only if the deal works out. See <a className='rpi-link' onClick={() => window.location.href='/pricing'}>pricing.</a></td>
+            <tr>
+              <td><div className='underline-red'>Problem</div><br></br> Expensive Recruiters</td>
+              <td><div className='underline-green'>Solution</div><br></br>Recruiters can charge upwards to <div className='underline'>30% or more</div> for their services. <br></br>With us, you pay no fees up front. Only if the deal works out. See <a className='rpi-link' onClick={() => window.location.href='/pricing'}>pricing.</a></td>
             </tr>
             <tr className="active-row">
-              <td>Contract to Hire</td>
-              <td>10% of gross contract duration pay, then 10% of gross for remaining months of full time work up to a total of 12 months.</td>
+              <td className='active-row'><div className='underline-red'>Problem</div><br></br> No-fit Candidates</td>
+              <td><div className='underline-green'>Solution</div><br></br>Recruiters often send you candidates who don't fit your needs. <br></br> Here you <div className='underline'>filter, search, and message</div> who you like and come to your own terms.</td>
             </tr>
-            <tr className="active-row">
-              <td>Contract</td>
-              <td>10% of each contract period up to 12 total months.</td>
-            </tr>
-            <tr className="active-row">
-              <td>Part-time</td>
-              <td>10% gross of part-time period up to 12 total months.</td>
-            </tr>
-            <tr className="active-row">
-              <td>Projects</td>
-              <td>If the sum of your projects equal less than $3,000, then no fee is due. When the sum of your projects equals $3,000 or more, then 10% gross is due.</td>
+            <tr>
+              <td><div className='underline-red'>Problem</div><br></br> Traditional Job Boards</td>
+              <td><div className='underline-green'>Solution</div><br></br>The unknown final costs of jobs boards quickly adds up. <br></br>On miDev there are no up-front costs, making it <div className='underline'>risk-free</div></td>
             </tr>
           </tbody>
         </table>
-</div>
+      </div>
+
+      <h3>Fixing Developer Problems</h3>
+      <div className='styled-table-container'>
+        <table className="styled-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td><div className='underline-red'>Problem</div><br></br> Irrelevant Offers</td>
+              <td><div className='underline-green'>Solution</div><br></br>Because we only focus on <div className='underline'>Michigan based employment</div> you'll get the most relevant job offers to you. </td>
+            </tr>
+            <tr className="active-row">
+              <td className='active-row'><div className='underline-red'>Problem</div><br></br> Expensive Recruiters</td>
+              <td><div className='underline-green'>Solution</div><br></br>Recruiters often eat into salaries, big time.<br></br>Our free profile creation gives you <div className='underline'>lifetime access</div> to job offers in Michigan.</td>
+            </tr>
+            <tr>
+              <td><div className='underline-red'>Problem</div><br></br> Contract Sites</td>
+              <td><div className='underline-green'>Solution</div><br></br>Fiverr and Upwork take from your below-market pay. <br></br>On miDev there are no up-front costs, making it <div className='underline'>risk-free</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
               </div>
-                </div>
+           </div>
         <div className="grey-box">
 </div>
       </ThemeProvider>

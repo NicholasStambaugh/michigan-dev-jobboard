@@ -168,6 +168,14 @@ const globalStyle = createGlobalStyle`
     color: ${({ theme }: GlobalThemeProps) => theme.text}
   }
 
+  td {
+    color: ${({ theme }: GlobalThemeProps) => theme.text}
+  }
+
+  .about-container {
+    margin-top: 1100px;
+  }
+
 `;
 
 export default withTheme(globalStyle);

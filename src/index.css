@@ -94,10 +94,17 @@ b {
   transition: color 0.3s ease;
 }
 
+.button-devs,
+.button-learn,
+button[role="button"] {
+  margin-right: 65px;
+}  
+
+
 button {
   background: #00BBD9;
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #000000 0 10px 20px -15px;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
@@ -112,7 +119,7 @@ button {
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin: 10px 0px 0 5px;
+  margin: 10px 0px 0 2px;
 }
 
 .button-learn {
@@ -241,6 +248,13 @@ header .header-logo-top-left {
   display: flex; /* Align items to the sides */
   align-items: center;
   margin-right: 0; /* Center vertically */
+}
+
+header .header-logo-top-left p {
+  display: flex; /* Align items to the sides */
+  align-items: center;
+  margin-right: 0;
+  margin-top: 1rem; /* Center vertically */
 }
 
 @media screen and (max-width: 768px) {
@@ -666,7 +680,7 @@ button[type="submit"]:hover {
 
 .underline {
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
@@ -674,13 +688,38 @@ button[type="submit"]:hover {
   transition: all 0.3s ease;
 }
 
+.underline-red {
+  display: inline-block;
+  background-color: #bb0000;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-bottom: 8px; /* Makes the element's width fit its content */ /* Centers the element horizontally */
+}
+
+.underline-green {
+  display: inline-block;
+  background-color: #007000;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  text-align: center;
+  font-size: 0.8rem; /* Makes the element's width fit its content *//* Centers the element horizontally */
+}
+
+
 .styled-table {
   border-collapse: collapse;
+  border: 3px solid #007a98;
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 5px;
 }
 
 .styled-table thead tr {
@@ -699,13 +738,8 @@ button[type="submit"]:hover {
 }
 
 
-.styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #007a98;
-}
-
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #007a98;
+.styled-table tbody tr.active-row td {
+  background-color: rgba(173, 216, 230, 0.127);
 }
 
 .styled-table th,
@@ -717,13 +751,4 @@ button[type="submit"]:hover {
 .styled-table th:nth-child(2),
 .styled-table td:nth-child(2) {
   width: 200%; /* Double the width of the second column */
-}
-
-.styled-table .active-row {
-  font-weight: bold;
-  color: #0078d4;
-}
-
-.pricing-header-text {
-  font-size: 2.5rem;
 }
