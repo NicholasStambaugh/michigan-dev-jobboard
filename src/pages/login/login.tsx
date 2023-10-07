@@ -45,11 +45,9 @@ function Login() {
               </div>
               <div className="right-logo-top-right">
                   <a className='login-button-header' onClick={() => window.location.href='/signup'}>Create Account</a>
-                  <a className='login-button-LOGIN'>Login</a>
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
-          <div className='login-card-form'>
         <div className="card">
           <form>
             <label htmlFor="username">Username:</label>
@@ -61,7 +59,6 @@ function Login() {
           <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div>
           </form>
           </div>
-        </div>
       </ThemeProvider>
     </ThemeContext>
   );

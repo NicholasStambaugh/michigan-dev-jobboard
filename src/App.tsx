@@ -57,7 +57,7 @@ function App() {
                </div>
         <button role="button" onClick={() => window.location.href='/signup'}>Create an Account</button>
         <button className="button-devs" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
-        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button>
+        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button> 
         <div className="center-line"></div>
         <div className="email-form">
         <p>Sign Up For Weekly Job and Market Reports!</p>

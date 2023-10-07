@@ -17,21 +17,19 @@
   flex-direction: column;
 }
 
-.about-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 25%;
-}
 
 .center-container {
   /* your existing styles */
-  margin-top: 140px; /* add some spacing between header and center-container */
+  margin-top: 140px;
+  margin-left: 2%; /* add some spacing between header and center-container */
 }
 
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70%;
+}
 
 a {
   font-weight: 500;
@@ -114,7 +112,7 @@ button {
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin: 5px;
+  margin: 10px 0px 0 5px;
 }
 
 .button-learn {
@@ -186,11 +184,13 @@ button:hover {
 }
 
 .email-form {
-  display: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 27%;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .email-form input[type="email"] {
@@ -198,6 +198,8 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .email-form button {
@@ -208,6 +210,7 @@ button:hover {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  width: 100%;
 }
 
 .email-form button:hover {
@@ -315,7 +318,8 @@ header .header-logo-top-left {
 
 .header-text {
   margin-bottom: 0px;
-  white-space: nowrap; /* Add spacing between the header and the "header-text" */
+  white-space: nowrap;
+  align-items: center; /* Add spacing between the header and the "header-text" */
 }
 
 
@@ -323,14 +327,12 @@ header .header-logo-top-left {
   display: flex;
   flex-direction: row; /* Arrange content in a row */ /* Add space between text and image */
   align-items: center; /* Vertically center content */
-  max-width: 100%;
-  margin-right: 25px; /* Ensure it stays within its container */
+  max-width: 100%; /* Ensure it stays within its container */
 }
 
 .hero-text {
   flex-grow: 1; /* Allow text to expand and take available space */
-  padding: 1rem;
-  margin-left:10px; /* Add padding for spacing */
+  padding: 1rem; /* Add padding for spacing */
 }
 
 .hero-img-container {
@@ -340,7 +342,7 @@ header .header-logo-top-left {
 .hero-img {
   max-width: 130%; /* Ensure the image scales appropriately */
   height: 200%;
-  margin: 0 0 50px -180px; /* Maintain aspect ratio */
+  margin: 0 0px 60px -180px; /* Maintain aspect ratio */
 }
 
 .login-button-header {

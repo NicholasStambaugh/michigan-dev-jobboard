@@ -164,6 +164,10 @@ const globalStyle = createGlobalStyle`
     }
   }
 
+  .username {
+    color: ${({ theme }: GlobalThemeProps) => theme.text}
+  }
+
 `;
 
 export default withTheme(globalStyle);
