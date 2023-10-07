@@ -1,22 +1,20 @@
-import React from 'react';
-import 'C:/Users/stambaughn/michigan-dev-jobboard/src/index.css';
-
-export class Footer extends React.Component {
-    render() {
-      return (
-        <footer>
-          <div className="footer" style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-            <div>
-              <a></a>Contact Us     
+function Footer() {
+    return (
+        <footer className="flex h-[10vh] max-w-5xl mx-auto items-center justify-between border-t">
+            <div className="flex items-center justify-center gap-4">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
             </div>
-            <div style={{width: '10px'}}></div>
-            <div>
-              © Nick Stambaugh {new Date().getFullYear()}
+            <div className="flex items-center justify-center gap-4">
+                <a href="#"><svg>...</svg></a>
+                <a href="#"><svg>...</svg></a>
+                <a href="#"><svg>...</svg></a>
             </div>
-          </div>
+            <div className="flex items-center justify-center gap-4">
+                <a href="#">miDev</a>
+            </div>
         </footer>
-      )
-    }
-  }
+    );
+}
 
-export default Footer;  
+export default Footer;
