@@ -1,6 +1,8 @@
    # miDev
 
-  The first job board for developers in Michigan.
+  The first job board for developers in Michigan. 
+  
+  Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
 
    ## Table of Contents
 
