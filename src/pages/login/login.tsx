@@ -6,48 +6,52 @@ import { lightTheme, darkTheme } from '../../styles/themes.ts';
 import useThemeMode from '../../hooks/useThemeMode.ts';
 import '../../assets/js/header';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+
 function Login() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   const navigate = useNavigate();
+  const [username, setUsername] = useState('');
+
   const handleLogin = () => {
-    fetch('http://localhost:3000/login', {
+    fetch('http://localhost:5000/profile', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        username: 'test',
-        password: 'test',
+        username: username
       }),
     })
-    .then(response => {
-      if (response.ok) {
-        // If login is successful, navigate to the developer page
-        navigate('./developers');
-      } else {
-        throw new Error('Failed to login');
-      }
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+      .then(response => {
+        if (response.ok) {
+          // If login is successful, navigate to the developer page
+          navigate('./developers');
+        } else {
+          throw new Error('Failed to login');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   };
+
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-          <header className="header" id='header'>
-              <div className="header-logo-top-left">
-              <a onClick={() => window.location.href='/'}>miDev</a>
-                  <p>Find Jobs. Hire Devs.</p>
-              </div>
-            <TogglerButton themeToggler={themeToggler} />
-          </header>
+        <header className="header" id='header'>
+          <div className="header-logo-top-left">
+            <a onClick={() => window.location.href='/'}>miDev</a>
+            <p>Find Jobs. Hire Devs.</p>
+          </div>
+          <TogglerButton themeToggler={themeToggler} />
+        </header>
         <div className="card">
           <form>
             <label htmlFor="username">Username:</label>
-            <input type="username" id="username" name="username" placeholder='username'/><br></br>
+            <input type="username" id="username" name="username" placeholder='username' value={username} onChange={(e) => setUsername(e.target.value)}/><br></br>
             <label htmlFor="password" placeholder='Password'>Password:</label>
             <input type="password" id="password" name="password" placeholder='password'/><br></br>
             <label htmlFor="login-type">Login as:</label>
@@ -57,14 +61,13 @@ function Login() {
             </select>
             <button type="submit" onClick={handleLogin}>Login</button>
             <div className="center-line"></div>
-          <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div><br></br>
-          <div className='need-account'><p>Want to post job listings and message devs?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Apply for Access.</a></p></div>
+            <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div><br></br>
+            <div className='need-account'><p>Want to post job listings and message devs?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Apply for Access.</a></p></div>
           </form>
-          </div>
+        </div>
       </ThemeProvider>
     </ThemeContext>
   );
-}
+};
 
 export default Login;
-
