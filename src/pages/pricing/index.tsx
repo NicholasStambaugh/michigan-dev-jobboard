@@ -24,9 +24,9 @@ function Pricing() {
         <TogglerButton themeToggler={themeToggler} />
       </header>
       <div className="pricing-container">
+        <br></br>
         <p>Flexible for all Michiganders. 🚀</p>
         <a className='pricing-header-text'>Pricing</a>
-        <div className="center-line"></div>
         <div className="pricing-card">
           <h3>For Developers <p className='underline'>Free</p></h3>
           <ul>
@@ -48,7 +48,6 @@ function Pricing() {
         </div>
         <p>Easy to understand! 👍</p>
         <a className='pricing-header-text'>Pricing Breakdown</a>
-        <div className="center-line"></div>
         <div className='styled-table-container'>
         <table className="styled-table">
           <thead>
@@ -59,7 +58,7 @@ function Pricing() {
           </thead>
           
           <tbody>
-            <tr className="active-row">
+            <tr>
               <td>Full Time</td>
               <td>10% of the employee's gross salary for the first 12 months</td>
             </tr>
@@ -67,7 +66,7 @@ function Pricing() {
               <td>Contract to Hire</td>
               <td>10% of gross contract duration pay, then 10% of gross for remaining months of full time work up to a total of 12 months.</td>
             </tr>
-            <tr className="active-row">
+            <tr>
               <td>Contract</td>
               <td>10% of each contract period up to 12 total months.</td>
             </tr>
@@ -75,13 +74,20 @@ function Pricing() {
               <td>Part-time</td>
               <td>10% gross of part-time period up to 12 total months.</td>
             </tr>
-            <tr className="active-row">
+            <tr>
               <td>Projects</td>
               <td>If the sum of your projects equal less than $3,000, then no fee is due. When the sum of your projects equals $3,000 or more, then 10% gross is due.</td>
             </tr>
           </tbody>
         </table>
 </div>
+<br></br>
+        <div className="email-form">
+          <p>Sign Up For Weekly Job and Market Reports!</p>
+          <input type="email" placeholder="✉️ Email" />
+          <button>Sign Up →</button>
+        </div>  
+        <br></br>
       </div>
     </ThemeProvider>
   );

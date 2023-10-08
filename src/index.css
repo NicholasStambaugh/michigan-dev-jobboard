@@ -37,7 +37,7 @@ a {
   text-decoration: none;
   font-size: 1.5rem; 
   transition: color 0.3s ease;
-  margin: 0px 0 0px;
+  margin: 0px 0 0px 0;
   touch-action: manipulation;
   cursor: pointer; /* Smooth color transition */
 }
@@ -94,11 +94,20 @@ b {
   transition: color 0.3s ease;
 }
 
-.button-devs,
+
 .button-learn,
 button[role="button"] {
-  margin-right: 65px;
+  margin: 10px auto 10px;
+  display: block;
+  align-items: center;
 }  
+
+select {
+  margin: 10px auto 25px;
+  display: block;
+  align-items: center;
+}
+
 
 
 button {
@@ -119,7 +128,7 @@ button {
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin: 10px 0px 0 2px;
+  margin: 0px 0px 0 0px;
 }
 
 .button-learn {
@@ -331,7 +340,8 @@ header .header-logo-top-left p {
 
 
 .header-text {
-  margin-bottom: 0px;
+  margin-bottom: -15px;
+  margin-top: -100px;
   white-space: nowrap;
   align-items: center; /* Add spacing between the header and the "header-text" */
 }
@@ -341,12 +351,14 @@ header .header-logo-top-left p {
   display: flex;
   flex-direction: row; /* Arrange content in a row */ /* Add space between text and image */
   align-items: center; /* Vertically center content */
-  max-width: 100%; /* Ensure it stays within its container */
+  max-width: 100%;
+  margin-bottom: -20px; /* Ensure it stays within its container */
 }
 
 .hero-text {
   flex-grow: 1; /* Allow text to expand and take available space */
-  padding: 1rem; /* Add padding for spacing */
+  padding: 1rem;
+  margin-top: -90px; /* Add padding for spacing */
 }
 
 .hero-img-container {
@@ -354,7 +366,7 @@ header .header-logo-top-left p {
 }
 
 .hero-img {
-  max-width: 130%; /* Ensure the image scales appropriately */
+  max-width: 175%; /* Ensure the image scales appropriately */
   height: 200%;
   margin: 0 0px 60px -180px; /* Maintain aspect ratio */
 }

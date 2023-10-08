@@ -33,10 +33,9 @@ function App() {
             <div className='header-text'>
               {/* Not working properly right now (scroll down screen)*/}
                   <a onClick={() => window.location.href='/developers'}>Hire Michigan Developers 🚀</a>
-                  <div className="center-line"></div>
-                  <p style={{marginLeft: '10px'}}>The miDev job board empowers talented developers<br></br>in Michigan to find their next gig effortlessly.</p>
               </div>
                 </div>
+                <br></br><br></br>
                 <div className='text-image-hero'>
                       <div className='hero-text'>
                         <h3><b>Companies:</b></h3>
@@ -54,18 +53,18 @@ function App() {
                       </div>
                   </div>
                </div>
-        <button className='button-devs' onClick={() => window.location.href='/signup'}>Create an Account</button>
-        <button className="button-devs" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
-        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button> 
-        <div className="center-line"></div>
-        <div className="email-form">
-        <p>Sign Up For Weekly Job and Market Reports!</p>
-          <input type="email" placeholder="✉️ Email" />
-          <button>Sign Up →</button>
-        </div>
+     <div className='button-heros'>          
+        <button className="button-learn" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
+        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More/FAQ</button></div> 
+        {/* Commenting out the email form for now */}
+        {/* <div className="email-form"> */}
+        {/* <p>Sign Up For Weekly Job and Market Reports!</p> */}
+          {/* <input type="email" placeholder="✉️ Email" /> */}
+          {/* <button>Sign Up →</button> */}
+        {/* </div> */}
         <div className="grey-box">
-  <h2>Trusted by developers and companies at...</h2>
-  <div className="company-logos">
+  {/* <h2>Trusted by developers and companies at...</h2> */}
+  {/* <div className="company-logos">
     <img src="../github.svg" alt="Company 1 Logo" />
     <img src="../hackernews.svg" alt="Company 2 Logo" />
     <img src="../mongodb.svg" alt="Company 3 Logo" />
@@ -73,6 +72,15 @@ function App() {
     <img src="../python.svg" alt="Company 3 Logo" />
     <img src="../netmagazine.svg" alt="Company 3 Logo" />
     <img src="../stackoverflow.svg" alt="Company 3 Logo" />
+  </div> */}
+  <div className="company-logos">
+    {/* <img src="../github.svg" alt="Company 1 Logo" /> */}
+    {/* <img src="../hackernews.svg" alt="Company 2 Logo" /> */}
+    {/* <img src="../mongodb.svg" alt="Company 3 Logo" /> */}
+    {/* <img src="../ruby.svg" alt="Company 3 Logo" /> */}
+    {/* <img src="../python.svg" alt="Company 3 Logo" /> */}
+    {/* <img src="../netmagazine.svg" alt="Company 3 Logo" /> */}
+    {/* <img src="../stackoverflow.svg" alt="Company 3 Logo" /> */}
   </div>
 </div>
       </ThemeProvider>

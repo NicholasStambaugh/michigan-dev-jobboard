@@ -92,6 +92,50 @@ function AboutUs() {
             </tr>
           </tbody>
         </table>
+        <h3>FAQs</h3>
+        <div className='styled-table-container'>
+          <table className="styled-table">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>How to register?</td>
+                <td><div className='underline-green'>Answer</div><br></br>Click on the 'Register' button on the top right corner of the homepage and fill in the required details.</td>
+              </tr>
+              <tr className="active-row">
+                <td className='active-row'>How to apply for a job?</td>
+                <td><div className='underline-green'>Answer</div><br></br>Once you have registered and logged in, you can click on the 'Apply' button on any job listing.</td>
+              </tr>
+              <tr>
+                <td>How to post a job?</td>
+                <td><div className='underline-green'>Answer</div><br></br>If you are an employer, you can post a job by clicking on the 'Post a Job' button on the homepage.</td>
+              </tr>  
+              <tr className="active-row">
+                <td className='active-row'>How does the placement fee work?</td>
+                <td><div className='underline-green'>Answer</div><br></br>Our fee is based on any type of work that takes place in the first 12 months of the employment relationship.</td>
+              </tr>
+              <tr>
+                <td>What if I hire more than 1 developer?</td>
+                <td><div className='underline-green'>Answer</div><br></br>The fee applies to each developer you hire.</td>
+              </tr>  
+              <tr className="active-row">
+                <td className='active-row'>Do you vet companies/developers?</td>
+                <td><div className='underline-green'>Answer</div><br></br>We do not vet either. We want to provide a free marketplace for Michigan tech workers and companies.<br></br> We allow each company and developer to set their own requirements.</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <br></br>
+        <div className="email-form">
+          <p>Sign Up For Weekly Job and Market Reports!</p>
+          <input type="email" placeholder="✉️ Email" />
+          <button>Sign Up →</button>
+        </div>  
+        <br></br>
       </div>
 
               </div>

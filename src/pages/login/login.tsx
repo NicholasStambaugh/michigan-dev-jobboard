@@ -50,9 +50,15 @@ function Login() {
             <input type="username" id="username" name="username" placeholder='username'/><br></br>
             <label htmlFor="password" placeholder='Password'>Password:</label>
             <input type="password" id="password" name="password" placeholder='password'/><br></br>
+            <label htmlFor="login-type">Login as:</label>
+            <select id="login-type" name="login-type">
+              <option value="developer">Developer</option>
+              <option value="company">Company</option>
+            </select>
             <button type="submit" onClick={handleLogin}>Login</button>
             <div className="center-line"></div>
-          <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div>
+          <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div><br></br>
+          <div className='need-account'><p>Want to post job listings and message devs?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Apply for Access.</a></p></div>
           </form>
           </div>
       </ThemeProvider>

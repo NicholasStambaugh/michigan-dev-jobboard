@@ -93,7 +93,7 @@ const globalStyle = createGlobalStyle`
   
   .content {
     flex-grow: 1;
-    margin-top: 300px; /* Allow the content to grow and take available space */
+    margin-top: 200px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
@@ -118,6 +118,14 @@ const globalStyle = createGlobalStyle`
     width: 100%;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
     color: ${({ theme }: GlobalThemeProps) => theme.text}
+  }
+
+  select {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
   
   .styled-table {
@@ -173,7 +181,7 @@ const globalStyle = createGlobalStyle`
   }
 
   .about-container {
-    margin-top: 1100px;
+    margin-top: 1700px;
   }
 
 `;
