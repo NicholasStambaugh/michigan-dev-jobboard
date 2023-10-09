@@ -1,12 +1,18 @@
    # COMING SOON FOR MICHIGAN
    ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png))
-   
+   ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20230757.png)
    
    # What is miDev?
 
   The first job board for developers in Michigan. 
   
   Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
+
+  Created by [Nick Stambaugh](https://github.com/NicholasStambaugh).
+
+  # Stack
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="95" height="95" />
+          
 
    ## Table of Contents
 
