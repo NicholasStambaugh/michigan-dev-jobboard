@@ -5,22 +5,27 @@ import ThemeContext from '../../contexts/ThemeContext/index.tsx';
 import { lightTheme, darkTheme } from '../../styles/themes.ts';
 import useThemeMode from '../../hooks/useThemeMode.ts';
 import '../../assets/js/header';
-import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 
 function Login() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const navigate = useNavigate();
   const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-function handleLogin(e: React.FormEvent) {
+async function handleLogin(e: React.FormEvent) {
   e.preventDefault();
-  fetch('http://localhost:5000/profile', {
+  await fetch('http://localhost:5000/profile', {
+    headers: {
+      'Content-Type': 'application/json'
+    },
     method: "POST",
     body: JSON.stringify({
       username,
+      password
     }),
+  }).then(() => {
+    window.location.href='/';
   });
 }
 
@@ -44,7 +49,9 @@ function handleLogin(e: React.FormEvent) {
                 setUsername(e.target.value);}}/>
             <br></br>
             <label htmlFor="password" placeholder='Password'>Password:</label>
-            <input id="password" placeholder='password'/><br></br>
+            <input type='password' placeholder='password' value={password} id="password" 
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setPassword(e.target.value);}}/><br></br>
             <label htmlFor="login-type">Login as:</label>
             <select id="login-type">
               <option value="developer">Developer</option>

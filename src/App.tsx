@@ -5,11 +5,22 @@ import ThemeContext from './contexts/ThemeContext';
 import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
+import { useEffect, useState } from 'react';
 
 function App() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const [profile, setProfile] = useState([]);
+
   console.log('Welcome to miDev :). Send resume to nastambaugh@gmail.com to work for us ♥♥♥')
+
+  useEffect(() => {
+    (async () => {
+     const response = await fetch('http://localhost:5000/profile');
+     const newProfiles = await response.json();
+     setProfile(newProfiles);
+    })();
+  }, []);
 
   return (
     <ThemeContext>
