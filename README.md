@@ -1,4 +1,8 @@
-   # miDev
+   # COMING SOON FOR MICHIGAN
+   ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png))
+   
+   
+   # What is miDev?
 
   The first job board for developers in Michigan. 
   
