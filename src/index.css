@@ -764,3 +764,18 @@ button[type="submit"]:hover {
 .styled-table td:nth-child(2) {
   width: 200%; /* Double the width of the second column */
 }
+
+.profiles {
+    display: grid;
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px -0px 0px;
+    margin-top: 20px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profiles li:hover {
+  background-color: #d7d7d770;
+}

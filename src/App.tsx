@@ -7,10 +7,15 @@ import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
 import { useEffect, useState } from 'react';
 
+type TProfile = {
+  username: string;
+  _id: string;
+};
+
 function App() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const [profile, setProfile] = useState([]);
+  const [profile, setProfile] = useState<TProfile[]>([]);
 
   console.log('Welcome to miDev :). Send resume to nastambaugh@gmail.com to work for us ♥♥♥')
 
@@ -92,8 +97,15 @@ function App() {
     {/* <img src="../python.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../netmagazine.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../stackoverflow.svg" alt="Company 3 Logo" /> */}
+    <h1>Developers</h1>
+    <br></br><br></br>    
+  </div> 
+  <ul className='profiles'>
+    {profile.map((profile) => (
+        <li key={profile._id}>{profile.username}</li>
+      ))}
+    </ul> 
   </div>
-</div>
       </ThemeProvider>
     </ThemeContext>
   );

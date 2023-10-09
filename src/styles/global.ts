@@ -93,7 +93,7 @@ const globalStyle = createGlobalStyle`
   
   .content {
     flex-grow: 1;
-    margin-top: 200px; /* Allow the content to grow and take available space */
+    margin-top: 600px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
@@ -184,6 +184,18 @@ const globalStyle = createGlobalStyle`
     margin-top: 1700px;
   }
 
+
+  .profiles li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+    height: 190px;
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: #000000 0 10px 20px -15px;
+  }
 `;
 
 export default withTheme(globalStyle);
