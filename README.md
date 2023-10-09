@@ -4,7 +4,13 @@
    
    # What is miDev?
 
-  The first job board for developers in Michigan. 
+  The first reverse job board and job board specifically for developers/IT work in Michigan.
+
+  The reverse job board, where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting.
+
+  Hire talented Michigan developers without the need for a recruiter or any upfront fees.
+
+
   
   Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
 
@@ -12,69 +18,14 @@
 
   # Stack
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="95" height="95" />
-          
-
-   ## Table of Contents
-
-   - [Installation](#installation)
-   - [Contributing](#contributing)
-   - [License](#license)
-   - [React-TS Help](#React)
-   - [Roadmap](#Roadmap)
-
-   ## Installation
-
-   `git clone https://github.com/NicholasStambaugh/michigan-dev-jobboard`
-   
-   `npm install`
-   
-   `npm start`
-   
-   ### RECOMMENDED
-   `yarn add`
-   
-   `yarn run dev`
-
-   ## Contributing
-
-   Fork first, please.
-
-   ## License
-
-   Apache License 2.0
-
-
-## React
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
-
-
+  
 # RoadMap
+- [ ] UI:
+   - [x] Night Mode.
+   - [x] Buttons.
+   - [ ] Responsiveness
+   - [x] landing page logo
+
 - [ ] User Authentication:
    - [ ] Implement a user registration and login system.
    - [ ] Users should be able to register, log in, and log out.
