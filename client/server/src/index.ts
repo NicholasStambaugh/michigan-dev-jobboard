@@ -1,6 +1,9 @@
 import express, {Request, Response} from "express";
 import mongoose from 'mongoose';
 import ProfileModel from "./models/profile";
+import { config } from 'dotenv';
+
+config();
 
 const PORT = 5000;
 
@@ -19,9 +22,7 @@ app.post('/profile', async (req: Request, res: Response) => {
 });
 
 
-mongoose.connect(
-    'mongodb+srv://nick:0JqyIkCOAIJbCMZn@cluster0.7fheiqh.mongodb.net/?retryWrites=true&w=majority'
-    ).then(() => {
+mongoose.connect(process.env.MONGO_URL!).then(() => {
         console.log(`Working on port ${PORT}`)
         app.listen(PORT);
     });
