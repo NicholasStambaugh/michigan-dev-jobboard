@@ -93,3 +93,6 @@ If you are developing a production application, we recommend updating the config
 - [ ] Company Profiles:
    - [ ] Allow companies to create and edit their own profiles.
    - [ ] Company profiles can include information like a company description, location, and current job listings.
+
+# Short Demo 10/8
+[![]](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/gif1-midev.gif)
