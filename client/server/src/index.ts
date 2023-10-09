@@ -15,7 +15,7 @@ app.use(express.json());
 app.get('/profile',async (req: Request, res: Response) => {
     const profiles = await ProfileModel.find();
     res.json(profiles);
-})
+});
 
 app.post('/profile', async (req: Request, res: Response) => {
     console.log(req.body);
@@ -28,6 +28,11 @@ app.post('/profile', async (req: Request, res: Response) => {
     res.json(createdProfile);
 });
 
+app.delete('/profile/:profileId', async (req: Request, res: Response) => {
+            const profileId = req.params.profileId;
+           const deletedprofile = await ProfileModel.findByIdAndDelete(profileId);
+            res.json(deletedprofile);
+});
 
 mongoose.connect(process.env.MONGO_URL!).then(() => {
         console.log(`Working on port ${PORT}`)
