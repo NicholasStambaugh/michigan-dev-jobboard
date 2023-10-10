@@ -6,9 +6,10 @@
 
   The first reverse job board and job board specifically for developers/IT work in Michigan.
 
-  The reverse job board, where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting.
+  # What is a reverse job board? 
+  It's a hub where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting when reaching out.
 
-  Hire talented Michigan developers without the need for a recruiter or any upfront fees.
+  Hire talented Michigan developers and find your next gig without a recruiter or upfront fees.
 
 
   
