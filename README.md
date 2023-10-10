@@ -50,6 +50,3 @@
 - [ ] Company Profiles:
    - [ ] Allow companies to create and edit their own profiles.
    - [ ] Company profiles can include information like a company description, location, and current job listings.
-
-# Short Demo 10/8
-![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/2023-10-08%2023-00-37.mkv)
