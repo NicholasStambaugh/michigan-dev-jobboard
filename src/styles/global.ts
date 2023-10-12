@@ -70,6 +70,7 @@ const globalStyle = createGlobalStyle`
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
+
   login-button-header {
     font-size: .975rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
@@ -94,7 +95,7 @@ const globalStyle = createGlobalStyle`
   
   .content {
     flex-grow: 1;
-    margin-top: 600px; /* Allow the content to grow and take available space */
+    margin-top: 700px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
@@ -201,7 +202,7 @@ const globalStyle = createGlobalStyle`
   .image {
     height: 100px;
     width: 100px;
-    background-image: url('https://xp.io/storage/15pewlWA.jpg');
+    background-image: url('/public/nick-demo.png');
     background-size: cover;
     border-radius: 50%;
     border: 8px solid ${({ theme }: GlobalThemeProps) => theme.background};
@@ -210,6 +211,16 @@ const globalStyle = createGlobalStyle`
     margin-left: 170px;
     box-shadow: 0 2px 15px rgb(58, 54, 54);
     transform: rotate(-20deg);
+  }
+
+  .shape {
+    height: 250px;
+    width: 400px;
+    background-color: ${({ theme }: GlobalThemeProps) => theme.text};
+    margin-left: -20px;
+    position: relative;
+    top: -175px;
+    transform: rotate(25deg);
   }
 `;
 

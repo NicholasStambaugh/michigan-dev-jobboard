@@ -96,14 +96,31 @@ function App() {
     {/* <img src="../python.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../netmagazine.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../stackoverflow.svg" alt="Company 3 Logo" /> */}
-    <a>Developers</a>
-    <br></br><br></br>    
+    <a>Developers...</a> 
   </div> 
-  <ul className='profiles'>
+  <div className='profiles'>
     {profile.map((profile) => (
-        <li key={profile._id}>{profile.username}</li>
-      ))}
-    </ul> 
+      <div className="container-profile" key={profile._id}>
+        <div className="shape">
+          <div className="image"></div>
+        </div>
+        <div className='text-card-container'>
+        <h3>{profile.username}</h3>
+        <h3 className="title">Web Designer</h3>
+        <p>Web Designer,UI designer,photographer,web developer,etc</p>
+        <div className="icons">  
+        <i className="devicon-python-plain-wordmark colored"></i>
+        <i className="devicon-react-plain-wordmark colored"></i>
+        <i className="devicon-typescript-plain colored"></i>
+        </div>
+      </div>
+    </div>
+    ))}
+    </div>
+    <br></br><br></br>
+    <div className='button-heros'> 
+    <button onClick={() => window.location.href='/developers'}>View All Michigan Developer Profiles →</button>
+    </div>
   </div>
       </ThemeProvider>
     </ThemeContext>

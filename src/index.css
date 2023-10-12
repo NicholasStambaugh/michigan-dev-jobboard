@@ -772,8 +772,11 @@ button[type="submit"]:hover {
     justify-content: center;
     margin: 0 0px -0px 0px;
     margin-top: 20px;
-    grid-gap: 10px;
+    margin-left: 2%; 
+    grid-gap: 35px;
     grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+
 }
 
 .profiles li {
@@ -786,26 +789,15 @@ button[type="submit"]:hover {
 }
 
 .container-profile {
-  height: 450px;
+  height: 370px;
   width: 300px;
-  box-shadow: 0 10px 20px black;
+  box-shadow: 0 10px 20px rgb(128, 128, 128);
   background-size: cover;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
   font-family: 'Abel', sans-serif;
-}
-
-.shape {
-  height: 250px;
-  width: 400px;
-  background-color: rgb(102, 102, 102);
-  margin-left: -20px;
-  position: relative;
-  top: -80px;
-  box-shadow: 0 2px 15px black;
-  transform: rotate(25deg);
 }
 
 h3 {
@@ -832,4 +824,9 @@ h3 {
 .icons i:hover {
   transform: scale(1.1);
   color: rgb(18, 192, 235);
+}
+
+.text-card-container {
+ margin-top: -100px;
+ padding: 20px;
 }
