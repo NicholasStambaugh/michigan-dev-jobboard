@@ -1,20 +1,23 @@
    # COMING SOON FOR MICHIGAN
-   ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png))
+   ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png)
    ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20230757.png)
    
    # What is miDev?
+Introducing miDev, the first reverse job board for Michigan.
 
-  The first reverse job board and job board specifically for developers/IT work in Michigan.
+miDev is a place where computer experts in Michigan, or people who want to work there, make profiles about themselves. 
 
-  The reverse job board, where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting.
+Companies can look at these pages and talk to them to see if they want to work together.
 
-  Hire talented Michigan developers without the need for a recruiter or any upfront fees.
+It's a way to find great computer experts in Michigan and cool jobs without needing a middle person or paying money upfront.
 
-
-  
   Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
 
-  Created by [Nick Stambaugh](https://github.com/NicholasStambaugh).
+  Made with ❤️ by [Nick Stambaugh](https://github.com/NicholasStambaugh).
+
+
+  # What is a reverse job board? 
+  It's a hub where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting when reaching out.
 
   # Stack
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" width="95" height="95"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="95" height="95" />
@@ -50,6 +53,3 @@
 - [ ] Company Profiles:
    - [ ] Allow companies to create and edit their own profiles.
    - [ ] Company profiles can include information like a company description, location, and current job listings.
-
-# Short Demo 10/8
-![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/2023-10-08%2023-00-37.mkv)
