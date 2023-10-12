@@ -82,7 +82,7 @@ p {
   font-weight: 600;
   color: #0078d4; /* Modern link color */
   text-decoration: none;
-  font-size: 1.4rem; /* Slightly smaller font size *//* Reduced margin for better spacing */
+  font-size: 2.6rem; /* Slightly smaller font size *//* Reduced margin for better spacing */
   place-items: center;
   transition: color 0.3s ease;
 }
@@ -776,6 +776,60 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.profiles li {
+  border: 1px solid #666666;
+  cursor: pointer;
+}
+
 .profiles li:hover {
   background-color: #d7d7d770;
+}
+
+.container-profile {
+  height: 450px;
+  width: 300px;
+  box-shadow: 0 10px 20px black;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Abel', sans-serif;
+}
+
+.shape {
+  height: 250px;
+  width: 400px;
+  background-color: rgb(102, 102, 102);
+  margin-left: -20px;
+  position: relative;
+  top: -80px;
+  box-shadow: 0 2px 15px black;
+  transform: rotate(25deg);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  color: rgb(105, 100, 109);
+}
+
+.icons {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.icons i {
+  margin-left: 20px;
+  font-size: 40px;
+  transition: 0.3s;
+  color: rgb(40, 163, 194);
+}
+
+.icons i:hover {
+  transform: scale(1.1);
+  color: rgb(18, 192, 235);
 }

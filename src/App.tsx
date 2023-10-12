@@ -57,11 +57,10 @@ function App() {
                         <h3><b>Companies:</b></h3>
                         <p>♥ Message for Free.</p>
                         <p>♥ Pay Only If You Hire.</p>
-                        <p>♥ Your Personal Michigan Dev Recruiter.</p>
+                        <p>♥ Your Personal Recruiter.</p>
                         <h3><b>Developers:</b></h3>
-                        <p>♥ Free leads on your future.</p>
+                        <p>♥ Free Michigan-based leads.</p>
                         <p>♥ Showcase your skills.</p>
-                        <p>♥ Forever free for devs.</p>
                       </div>
                       <div className='hero-img-container'>
                         <img className='hero-img' src='../hero.svg' alt='Hero' />
@@ -97,7 +96,7 @@ function App() {
     {/* <img src="../python.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../netmagazine.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../stackoverflow.svg" alt="Company 3 Logo" /> */}
-    <h1>Developers</h1>
+    <a>Developers</a>
     <br></br><br></br>    
   </div> 
   <ul className='profiles'>

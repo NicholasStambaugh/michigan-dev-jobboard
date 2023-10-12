@@ -27,6 +27,7 @@ const globalStyle = createGlobalStyle`
     height: calc(100vh - 100px);
     width: 100%;
     margin: 0 auto;
+    margin-left: 15px;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
     display: flex;
     justify-content: center;
@@ -195,6 +196,20 @@ const globalStyle = createGlobalStyle`
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: #000000 0 10px 20px -15px;
+  }
+
+  .image {
+    height: 100px;
+    width: 100px;
+    background-image: url('https://xp.io/storage/15pewlWA.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid ${({ theme }: GlobalThemeProps) => theme.background};
+    position: relative;
+    top: 200px;
+    margin-left: 170px;
+    box-shadow: 0 2px 15px rgb(58, 54, 54);
+    transform: rotate(-20deg);
   }
 `;
 

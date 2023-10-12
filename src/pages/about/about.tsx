@@ -36,7 +36,7 @@ function AboutUs() {
                   <br></br>While this strategy is for the Grand Rapids region, we felt the philosophy <br></br>and focus aligned with ours of making Michigan a better place for tech workers and companies alike.</p>
                   <br></br><div className="center-line"></div>
                   <h3>History</h3>
-                  <p>miDev was created by <a className='rpi-link' href='https://www.nickstambaugh.com'>Nick Stambaugh</a> in October 2023. 
+                  <p>miDev was created by <a className='rpi-link' href='https://www.linkedin.com/in/nick-s-694241139/'>Nick Stambaugh</a> in October 2023. 
           <br></br><br></br>After being fed up with traditional job boards, 
                   Nick created miDev to focus<br></br> a growing community of tech hiring managers and developers in Michigan around a singular networking platform.</p>
       <div className="center-line"></div>

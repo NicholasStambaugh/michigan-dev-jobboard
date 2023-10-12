@@ -60,23 +60,23 @@ function Pricing() {
           <tbody>
             <tr>
               <td>Full Time</td>
-              <td>10% of the employee's gross salary for the first 12 months</td>
+              <td>8% of the employee's gross salary for the first 12 months</td>
             </tr>
             <tr className="active-row">
               <td>Contract to Hire</td>
-              <td>10% of gross contract duration pay, then 10% of gross for remaining months of full time work up to a total of 12 months.</td>
+              <td>8% of gross contract duration pay, then 8% of gross for remaining months of full time work up to a total of 12 months.</td>
             </tr>
             <tr>
               <td>Contract</td>
-              <td>10% of each contract period up to 12 total months.</td>
+              <td>8% of each contract period up to 12 total months.</td>
             </tr>
             <tr className="active-row">
               <td>Part-time</td>
-              <td>10% gross of part-time period up to 12 total months.</td>
+              <td>8% gross of part-time period up to 12 total months.</td>
             </tr>
             <tr>
               <td>Projects</td>
-              <td>If the sum of your projects equal less than $3,000, then no fee is due. When the sum of your projects equals $3,000 or more, then 10% gross is due.</td>
+              <td>If the sum of your projects equal less than $3,000, then no fee is due. When the sum of your projects equals $3,000 or more, then 8% gross is due.</td>
             </tr>
           </tbody>
         </table>
