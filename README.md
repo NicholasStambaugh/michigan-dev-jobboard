@@ -21,16 +21,29 @@ It's a way to find great computer experts in Michigan and cool jobs without need
 
   Made with ❤️ by [Nick Stambaugh](https://github.com/NicholasStambaugh).
 
-  ## Features (TBD)
-  🔥Create a user profile and get noticed, no extra money or work required.
+  # Why Open-Source?
+   [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight&author=Nick+Stambaugh&quote=Open+sourcing+miDev+is+not+just+a+commitment+to+transparency+but+a+step+towards+a+more+equitable,+inclusive,+and+thriving+tech+industry+in+Michigan.)](https://github.com/piyushsuthar/github-readme-quotes)
   
-  🚀Post your latest IT roles
+  We have made the deliberate choice to open-source miDev, a unique platform that serves as both a reverse job board and a job board tailored specifically for Michigan's IT workers. 
+  
+  Our primary motivation for taking this step is to foster greater transparency within the hiring landscape in the state of Michigan. 
+  
+  By making miDev an open-source project, we aim to empower the local tech community with unprecedented access to real-time job market data, helping job seekers and employers alike make more informed decisions. 
+  
+  We believe that transparency is key to addressing the challenges in the IT job market, bridging the gap between talent and opportunity. 
+  
+  Through collaborative efforts and the collective wisdom of the community, we hope to enhance Michigan's tech ecosystem and contribute to the growth and prosperity of IT professionals in the region. 
+
+  ## Features (TBD)
+  🔥Create a user profile and get noticed, no extra money or work is required for individuals.
+  
+  🚀Post your latest IT roles and find Michigan-specific talent.
   
   📧Recieve automated email notifications of new jobs or new profiles.
   
-  🌙Night Mode
+  🌙Night Mode.
 
-  📖Open-source & free forever for individuals
+  📖Open-source & free forever for individuals.
 
 
   # What is a reverse job board? 
