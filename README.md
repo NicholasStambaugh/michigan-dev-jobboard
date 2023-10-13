@@ -20,7 +20,7 @@
       
    # COMING SOON FOR MICHIGAN
    #### The first open-source job board for Michigan
-   ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20230757.png)
+   ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-13%20184439.png)
    
    # What is miDev?
 Introducing miDev, the first reverse job board for Michigan.
