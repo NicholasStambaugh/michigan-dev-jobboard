@@ -64,7 +64,7 @@ function App() {
                         <p>♥ Open-source forever.</p>
                       </div>
                       <div className='hero-img-container'>
-                        <img className='hero-img' src='../hero.svg' alt='Hero' />
+                        <img className='hero-img' src='../hero-final4.svg' alt='Hero' />
                       </div>
                       </div>
                   </div>
