@@ -1,7 +1,22 @@
 <header>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </header>         
-   <body>
+   <div style="text-align: center;">
+
+      
+   # Why Open-Source?
+     
+   [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight&author=Nick+Stambaugh&quote=Open+sourcing+miDev+is+not+just+a+commitment+to+transparency+but+a+step+towards+a+more+equitable,+inclusive,+and+thriving+tech+industry+in+Michigan.)](https://github.com/piyushsuthar/github-readme-quotes)
+  
+  We have made the deliberate choice to open-source miDev, a unique platform that serves as both a reverse job board and a job board tailored specifically for Michigan's IT workers. 
+  
+  Our primary motivation for taking this step is to foster greater transparency within the hiring landscape in the state of Michigan. 
+  
+  By making miDev an open-source project, we aim to empower the local tech community with unprecedented access to real-time job market data, helping job seekers and employers alike make more informed decisions. 
+  
+  We believe that transparency is key to addressing the challenges in the IT job market and bridging the gap between talent and opportunity. 
+  
+  Through collaborative efforts and the collective wisdom of the community, we hope to enhance Michigan's tech ecosystem and contribute to the growth and prosperity of IT professionals in the region. 
       
    # COMING SOON FOR MICHIGAN
    #### The first open-source job board for Michigan
@@ -20,19 +35,6 @@ It's a way to find great computer experts in Michigan and cool jobs without need
   Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
 
   Made with ❤️ by [Nick Stambaugh](https://github.com/NicholasStambaugh).
-
-  # Why Open-Source?
-   [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight&author=Nick+Stambaugh&quote=Open+sourcing+miDev+is+not+just+a+commitment+to+transparency+but+a+step+towards+a+more+equitable,+inclusive,+and+thriving+tech+industry+in+Michigan.)](https://github.com/piyushsuthar/github-readme-quotes)
-  
-  We have made the deliberate choice to open-source miDev, a unique platform that serves as both a reverse job board and a job board tailored specifically for Michigan's IT workers. 
-  
-  Our primary motivation for taking this step is to foster greater transparency within the hiring landscape in the state of Michigan. 
-  
-  By making miDev an open-source project, we aim to empower the local tech community with unprecedented access to real-time job market data, helping job seekers and employers alike make more informed decisions. 
-  
-  We believe that transparency is key to addressing the challenges in the IT job market and bridging the gap between talent and opportunity. 
-  
-  Through collaborative efforts and the collective wisdom of the community, we hope to enhance Michigan's tech ecosystem and contribute to the growth and prosperity of IT professionals in the region. 
 
   ## Features (TBD)
   🔥Create a user profile and get noticed, no extra money or work is required for individuals.
@@ -91,4 +93,4 @@ It's a way to find great computer experts in Michigan and cool jobs without need
    - [ ] Allow companies to create and edit their own profiles.
    - [ ] Company profiles can include information like a company description, location, and current job listings.
 
-     </body>
+     </div>
