@@ -30,7 +30,7 @@ It's a way to find great computer experts in Michigan and cool jobs without need
   
   By making miDev an open-source project, we aim to empower the local tech community with unprecedented access to real-time job market data, helping job seekers and employers alike make more informed decisions. 
   
-  We believe that transparency is key to addressing the challenges in the IT job market, bridging the gap between talent and opportunity. 
+  We believe that transparency is key to addressing the challenges in the IT job market and bridging the gap between talent and opportunity. 
   
   Through collaborative efforts and the collective wisdom of the community, we hope to enhance Michigan's tech ecosystem and contribute to the growth and prosperity of IT professionals in the region. 
 
