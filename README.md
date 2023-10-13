@@ -47,7 +47,7 @@ It's a way to find great computer experts in Michigan and cool jobs without need
 
 
   # What is a reverse job board? 
-  It's a hub where developers in Michigan or looking to work in Michigan post profiles, and companies use their own vetting when reaching out.
+  It's a community where tech talent in Michigan or those looking to work in Michigan can post profiles that highlight their skills, and companies use their own vetting when reaching out.
 
   # Stack
   #### Frontend
