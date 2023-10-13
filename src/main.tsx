@@ -4,7 +4,13 @@ import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import RoutesConfig from './routes/routes.tsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  throw new Error("Root element not found");
+}
+
+const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>

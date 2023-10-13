@@ -9,6 +9,7 @@ function Signup() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
+
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>

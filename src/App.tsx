@@ -125,6 +125,9 @@ function App() {
     <div className="footer">
       <a className='footer-text'>Privacy Policy</a>
       <a className='footer-text' onClick={() => window.location.href='/open'}>Open Startup</a>
+      <br></br>
+      <i className="devicon-github-plain colored"></i>
+      <i className="devicon-linkedin-plain colored"></i>
     </div>
   </div>
       </ThemeProvider>

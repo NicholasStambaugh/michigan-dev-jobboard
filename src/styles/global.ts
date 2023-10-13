@@ -95,7 +95,7 @@ const globalStyle = createGlobalStyle`
   
   .content {
     flex-grow: 1;
-    margin-top: 790px; /* Allow the content to grow and take available space */
+    margin-top: 890px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
