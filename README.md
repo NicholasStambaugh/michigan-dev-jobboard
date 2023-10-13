@@ -4,6 +4,7 @@
    <body>
       
    # COMING SOON FOR MICHIGAN
+   #### The first open-source job board
    ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png)
    ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20230757.png)
    
@@ -19,6 +20,17 @@ It's a way to find great computer experts in Michigan and cool jobs without need
   Inspired by [jschimp](https://jschimp.com/), [railsdevs](https://railsdevs.com/), and [japan-dev](https://japan-dev.com/).
 
   Made with ❤️ by [Nick Stambaugh](https://github.com/NicholasStambaugh).
+
+  ## Features (TBD)
+  🔥Create a user profile and get noticed!
+  
+  🚀Post your latest IT roles
+  
+  📧Recieve automated email notifications of new jobs or new profiles.
+  
+  🌙Night Mode
+
+  📖Open-source & free forever for individuals
 
 
   # What is a reverse job board? 
