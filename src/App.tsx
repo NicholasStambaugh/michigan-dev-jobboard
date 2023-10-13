@@ -61,6 +61,7 @@ function App() {
                         <h3><b>Developers:</b></h3>
                         <p>♥ Free Michigan-based leads.</p>
                         <p>♥ Showcase your skills.</p>
+                        <p>♥ Open-source forever.</p>
                       </div>
                       <div className='hero-img-container'>
                         <img className='hero-img' src='../hero.svg' alt='Hero' />
@@ -120,6 +121,10 @@ function App() {
     <br></br><br></br>
     <div className='button-heros'> 
     <button onClick={() => window.location.href='/developers'}>View All Michigan Developer Profiles →</button>
+    </div>
+    <div className="footer">
+      <a className='footer-text'>Privacy Policy</a>
+      <a className='footer-text'>Open Startup</a>
     </div>
   </div>
       </ThemeProvider>

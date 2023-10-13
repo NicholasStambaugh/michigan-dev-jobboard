@@ -28,7 +28,7 @@ function Pricing() {
         <p>Flexible for all Michiganders. 🚀</p>
         <a className='pricing-header-text'>Pricing</a>
         <div className="pricing-card">
-          <h3>For Developers <p className='underline'>Free</p></h3>
+          <h3>For Developers <p className='underline'>Free / Open-Source</p></h3>
           <ul>
             <p>✅ Free developer profile</p>
             <p>✅ No fees</p>
