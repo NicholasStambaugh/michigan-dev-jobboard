@@ -124,7 +124,7 @@ function App() {
     </div>
     <div className="footer">
       <a className='footer-text'>Privacy Policy</a>
-      <a className='footer-text'>Open Startup</a>
+      <a className='footer-text' onClick={() => window.location.href='/about'}>Open Startup</a>
     </div>
   </div>
       </ThemeProvider>

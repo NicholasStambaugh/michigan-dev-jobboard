@@ -362,7 +362,7 @@ header .header-logo-top-left p {
 }
 
 .hero-img-container {
-  max-width: 200px; /* Adjust the maximum width as needed */
+  max-width: 230px; /* Adjust the maximum width as needed */
 }
 
 .hero-img {
@@ -791,13 +791,13 @@ button[type="submit"]:hover {
 .container-profile {
   height: 370px;
   width: 300px;
-  box-shadow: 0 10px 20px rgb(128, 128, 128);
   background-size: cover;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
   font-family: 'Abel', sans-serif;
+  border: 5px grey ;
 }
 
 h3 {

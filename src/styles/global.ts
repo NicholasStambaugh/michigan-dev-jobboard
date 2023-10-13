@@ -95,7 +95,7 @@ const globalStyle = createGlobalStyle`
   
   .content {
     flex-grow: 1;
-    margin-top: 750px; /* Allow the content to grow and take available space */
+    margin-top: 790px; /* Allow the content to grow and take available space */
   }
 
   .grey-box { 
@@ -183,7 +183,7 @@ const globalStyle = createGlobalStyle`
   }
 
   .about-container {
-    margin-top: 1700px;
+    margin-top: 1800px;
   }
 
 
@@ -194,9 +194,7 @@ const globalStyle = createGlobalStyle`
     color: ${({ theme }: GlobalThemeProps) => theme.text};
     height: 190px;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: #000000 0 10px 20px -15px;
+    border: 1px solid #666666;
   }
 
   .image {

@@ -7,6 +7,7 @@ import Login from '../pages/login/login';
 import Devs from '../pages/developers/devs';
 import Signup from '../pages/signup/signup';
 import Pricing from '../pages/pricing';
+import Open from '../pages/open/open';
 
 const RoutesConfig: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const RoutesConfig: React.FC = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/developers" element={<Devs />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/open" element={<Open />} />
     </Routes>
   );
 };
