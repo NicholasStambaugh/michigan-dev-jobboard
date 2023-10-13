@@ -4,7 +4,7 @@
    <body>
       
    # COMING SOON FOR MICHIGAN
-   #### The first open-source job board
+   #### The first open-source job board for Michigan
    ![image](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20225307.png)
    ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-08%20230757.png)
    
