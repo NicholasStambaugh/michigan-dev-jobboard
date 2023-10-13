@@ -6,7 +6,7 @@
       
    # Why Open-Source?
      
-   [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight&author=Nick+Stambaugh,+mIDev+Founder&quote=Open+sourcing+miDev+is+not+just+a+commitment+to+transparency+but+a+step+towards+a+more+equitable,+inclusive,+and+thriving+tech+industry+in+Michigan.)](https://github.com/piyushsuthar/github-readme-quotes)
+   [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=dracula&author=Nick+Stambaugh,+mIDev+Founder&quote=Open+sourcing+miDev+is+not+just+a+commitment+to+transparency+but+a+step+towards+a+more+equitable,+inclusive,+and+thriving+tech+industry+in+Michigan.)](https://github.com/piyushsuthar/github-readme-quotes)
   
   We have made the deliberate choice to open-source miDev, a unique platform that serves as both a reverse job board and a job board tailored specifically for Michigan's IT workers. 
   
