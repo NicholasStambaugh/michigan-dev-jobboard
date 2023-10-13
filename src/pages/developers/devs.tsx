@@ -4,15 +4,33 @@ import GlobalStyle from '../../styles/global.ts';
 import ThemeContext from '../../contexts/ThemeContext/index.tsx';
 import { lightTheme, darkTheme } from '../../styles/themes.ts';
 import useThemeMode from '../../hooks/useThemeMode.ts';
+import { useEffect, useState } from 'react';
+
+type TProfile = {
+  username: string;
+  _id: string;
+};
+
 
 function Devs() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const [profile, setProfile] = useState<TProfile[]>([]);
+
+
+  useEffect(() => {
+    (async () => {
+     const response = await fetch('http://localhost:5000/profile');
+     const newProfiles = await response.json();
+     setProfile(newProfiles);
+    })();
+  }, []);
 
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
+        <div className="container">
           <header className="header" id='header'>
               <div className="header-logo-top-left">
               <a onClick={() => window.location.href='/'}>miDev</a>
@@ -24,9 +42,39 @@ function Devs() {
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
+<div className="devs-container">
+<div className="content">
+    <a>Developers...</a> 
+  <div className='profiles'>
+    {profile.map((profile) => (
+      <div className="container-profile" key={profile._id}>
+        <div className="shape">
+          <div className="image"></div>
+        </div>
+        <div className='text-card-container'>
+        <h3>{profile.username}</h3>
+        <h3 className="title">Web Designer</h3>
+        <p>Web Designer,UI designer,photographer,web developer,etc</p>
+        <div className="icons">  
+        <i className="devicon-python-plain-wordmark colored"></i>
+        <i className="devicon-react-plain-wordmark colored"></i>
+        <i className="devicon-typescript-plain colored"></i>
+        </div>
+      </div>
+    </div>
+    ))}
+    </div>
+    <br></br><br></br>
+    <div className="footer">
+      <a className='footer-text'>Privacy Policy</a>
+      <a className='footer-text' onClick={() => window.location.href='/open'}>Open Startup</a>
+    </div>
+  </div>
+  </div>
+  </div>
       </ThemeProvider>
-    </ThemeContext>
-  );
-}
-
-export default Devs;
+      </ThemeContext>
+    );
+  }
+  
+  export default Devs

@@ -186,6 +186,14 @@ const globalStyle = createGlobalStyle`
     margin-top: 1800px;
   }
 
+  .open-container {
+    margin-top: 1700px;
+  }
+
+  .devs-container {
+    margin-top: -600px;
+  }
+
 
   .profiles li {
     display: flex;

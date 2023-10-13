@@ -120,11 +120,11 @@ function App() {
     </div>
     <br></br><br></br>
     <div className='button-heros'> 
-    <button onClick={() => window.location.href='/developers'}>View All Michigan Developer Profiles →</button>
+    <button className="button-learn"onClick={() => window.location.href='/developers'}>View All Michigan Developer Profiles →</button>
     </div>
     <div className="footer">
       <a className='footer-text'>Privacy Policy</a>
-      <a className='footer-text' onClick={() => window.location.href='/about'}>Open Startup</a>
+      <a className='footer-text' onClick={() => window.location.href='/open'}>Open Startup</a>
     </div>
   </div>
       </ThemeProvider>

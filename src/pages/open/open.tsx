@@ -25,20 +25,15 @@ function Open() {
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
-          <div className="about-container">
+          <div className="open-container">
             <div className='header-text'>
-                  <h3>miDev?</h3>
-                  <p>Think of it as a reverse job board, developers in Michigan or looking to work in Michigan post profiles and companies use their own vetting. <br></br><br></br>
-                  Hire talented Michigan developers without the need for a recruiter or any upfront fees.</p>
-                  <br></br><div className="center-line"></div>
-                  <h3>Our Mission</h3>
+                  <h3>Open-Source Commitment</h3>
+                  <p>We have made the deliberate choice to open-source miDev, a unique platform that serves as both <br></br>a reverse job board and a job board tailored specifically for Michigan's IT workers.<br></br>
+                  <br></br>Our primary motivation for taking this step is to foster greater transparency within the hiring landscape in the state of Michigan. </p>
+                  <div className="center-line"></div>
+                  <h3>Our Mission</h3> 
                   <p>Empower developers and companies within Michigan to foster a thriving tech community aligned with <a className='rpi-link' href='https://online.flippingbook.com/view/849454618/'>The Right Place's Tech Strategy.</a><br></br>
                   <br></br>While this strategy is for the Grand Rapids region, we felt the philosophy <br></br>and focus aligned with ours of making Michigan a better place for tech workers and companies alike.</p>
-                  <br></br><div className="center-line"></div>
-                  <h3>History</h3>
-                  <p>miDev was created by <a className='rpi-link' href='https://www.linkedin.com/in/nick-s-694241139/'>Nick Stambaugh</a> in October 2023. 
-          <br></br><br></br>After being fed up with traditional job boards, 
-                  Nick created miDev to focus<br></br> a growing community of tech hiring managers and developers in Michigan around a singular networking platform.</p>
       <div className="center-line"></div>
         <h3>Fixing Hiring Problems</h3>
       <div className='styled-table-container'>
