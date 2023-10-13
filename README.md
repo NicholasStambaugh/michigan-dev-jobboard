@@ -22,7 +22,7 @@ It's a way to find great computer experts in Michigan and cool jobs without need
   Made with ❤️ by [Nick Stambaugh](https://github.com/NicholasStambaugh).
 
   ## Features (TBD)
-  🔥Create a user profile and get noticed!
+  🔥Create a user profile and get noticed, no extra money or work required.
   
   🚀Post your latest IT roles
   
