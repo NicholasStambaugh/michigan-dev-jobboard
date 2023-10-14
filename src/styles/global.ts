@@ -233,7 +233,7 @@ const globalStyle = createGlobalStyle`
   .shape {
     height: 250px;
     width: 400px;
-    background-color: ${({ theme }: GlobalThemeProps) => theme.text};
+    background-color: #D1D1D1;
     margin-left: -20px;
     position: relative;
     top: -175px;

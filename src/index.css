@@ -154,6 +154,7 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-right: 35px;
   }
   
   .button-learn-header:hover {
@@ -167,6 +168,48 @@ button {
   
   .button-learn-header:focus-visible {
     box-shadow: none;
+  }
+  .header {
+    box-shadow: 5 3.5rem 2rem rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 75%;
+  }
+  
+  .header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header .navbar .navbar-brand {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .header .navbar .navbar-brand:hover {
+    color: #007bff;
+  }
+  
+  .header .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .navbar .navbar-nav .nav-item {
+    margin-left: 4.5rem;
+  }
+  
+  .header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .header .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
   }
 
   .button-learn {

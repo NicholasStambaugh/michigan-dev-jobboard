@@ -14,16 +14,25 @@ function Open() {
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-          <header className="header" id='header'>
-              <div className="header-logo-top-left">
-              <a onClick={() => window.location.href='/'}>miDev</a>
-                  <p>Find Jobs. Hire Devs.</p>
-              </div>
-              <div className="right-logo-top-right">
-                  <a className='login-button-header'>Create Account</a>
-                  <a className='login-button-LOGIN'>Login</a>
-              </div>
-            <TogglerButton themeToggler={themeToggler} />
+        <header className="header" id='header'>
+              <nav className="navbar">
+                  <div className="navbar-brand">
+                      <a onClick={() => window.location.href='/'}>miDev</a>
+                      <p>Find Jobs. Hire Devs.</p>
+                  </div>
+                  <div className="navbar-nav">
+                      <div className="nav-item">
+                          <a className='nav-link' onClick={() => window.location.href='/developers'}>Developers</a>
+                      </div>
+                      <div className="nav-item">
+                          <a className='nav-link' onClick={() => window.location.href='/pricing'}>Pricing</a>
+                      </div>
+                      <div className="nav-item">
+                          <button className="button-learn-header" onClick={() => window.location.href='/getstarted'}>Get Started →</button>
+                      </div>
+                  </div>
+              </nav>
+              <TogglerButton themeToggler={themeToggler} />
           </header>
           <div className="open-container">
             <div className='header-text'>
