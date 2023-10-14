@@ -250,6 +250,20 @@ const globalStyle = createGlobalStyle`
     padding: 20px;
     text-align: center;
   }
+
+  .container-profile {
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    height: 370px;
+    width: 300px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Abel', sans-serif;
+    border: 1px solid #dee2e6;
+  }
 `;
 
 export default withTheme(globalStyle);

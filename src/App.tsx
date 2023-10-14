@@ -101,7 +101,7 @@ function App() {
   </div> 
   <div className='profiles'>
     {profile.map((profile) => (
-      <div className="container-profile" key={profile._id}>
+      <div className="container-profile" key={profile._id} onClick={() => window.location.href=`/profile/${profile._id}`}>
         <div className="shape">
           <div className="image"></div>
         </div>
@@ -109,10 +109,11 @@ function App() {
         <h3>{profile.username}</h3>
         <h3 className="title">Web Designer</h3>
         <p>Web Designer,UI designer,photographer,web developer,etc</p>
-        <div className="icons">  
+        <div className="icons">
+          <p>Skills  
         <i className="devicon-python-plain-wordmark colored"></i>
         <i className="devicon-react-plain-wordmark colored"></i>
-        <i className="devicon-typescript-plain colored"></i>
+        <i className="devicon-typescript-plain colored"></i></p>
         </div>
       </div>
     </div>

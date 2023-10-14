@@ -839,18 +839,6 @@ button[type="submit"]:hover {
   background-color: #d7d7d770;
 }
 
-.container-profile {
-  height: 370px;
-  width: 300px;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  font-family: 'Abel', sans-serif;
-  border: 5px grey ;
-}
-
 h3 {
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -870,6 +858,10 @@ h3 {
   font-size: 40px;
   transition: 0.3s;
   color: rgb(40, 163, 194);
+}
+
+.icons p {
+  margin-bottom: 35px;
 }
 
 .icons i:hover {
@@ -915,10 +907,10 @@ h3 {
 }
 
 .role-card button {
-  background-color: #007bff;
+  background-color: #D1D1D1;
   border: none;
   border-radius: 0.25rem;
-  color: #fff;
+  color: black;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
@@ -928,5 +920,6 @@ h3 {
 }
 
 .role-card button:hover {
-  background-color: #0056b3;
+  background-color: #b7b5b5;
+  text-decoration: underline;
 }
