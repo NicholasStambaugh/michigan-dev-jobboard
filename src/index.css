@@ -742,6 +742,13 @@ button[type="submit"]:hover {
   height: 100vh;
 }
 
+.small-label {
+  font-size: small;
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 5px;
+}
+
 .filter-container {
   width: 200px;
   position: fixed;
