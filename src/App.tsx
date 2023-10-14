@@ -40,7 +40,7 @@ function App() {
               <div className="right-logo-top-right">
                   <a className='login-button-LOGIN' onClick={() => window.location.href='/developers'}>Developers</a>
                   <a className='login-button-LOGIN' onClick={() => window.location.href='/pricing'}>Pricing</a>
-                  <a className='login-button-LOGIN' onClick={() => window.location.href='/login'} >Login</a>
+                  <button className="button-learn-header" onClick={() => window.location.href='/getstarted'}>Get Started →</button>
               </div>
             <TogglerButton themeToggler={themeToggler} />
           </header>
