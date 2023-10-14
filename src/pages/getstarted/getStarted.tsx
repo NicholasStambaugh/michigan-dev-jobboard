@@ -5,7 +5,6 @@ import ThemeContext from '../../contexts/ThemeContext/index.tsx';
 import { lightTheme, darkTheme } from '../../styles/themes.ts';
 import useThemeMode from '../../hooks/useThemeMode.ts';
 import '../../assets/js/header';
-import React from 'react';
 
 function Started() {
   const { theme, themeToggler } = useThemeMode();

@@ -175,11 +175,18 @@ const globalStyle = createGlobalStyle`
   }
 
   .username {
-    color: ${({ theme }: GlobalThemeProps) => theme.text}
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
   td {
-    color: ${({ theme }: GlobalThemeProps) => theme.text}
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+  select {
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+  option {
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
   .about-container {

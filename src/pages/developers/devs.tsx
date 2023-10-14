@@ -11,26 +11,25 @@ type TProfile = {
   _id: string;
 };
 
-
 function Devs() {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   const [profile, setProfile] = useState<TProfile[]>([]);
-
+  const [filter, setFilter] = useState<string>('');
 
   useEffect(() => {
     (async () => {
-     const response = await fetch('http://localhost:5000/profile');
+     const response = await fetch(`http://localhost:5000/profile?filter=${filter}`);
      const newProfiles = await response.json();
      setProfile(newProfiles);
     })();
-  }, []);
+  }, [filter]);
 
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <div className="container">
+  <div className="container">
           <header className="header" id='header'>
               <div className="header-logo-top-left">
               <a onClick={() => window.location.href='/'}>miDev</a>
@@ -43,6 +42,14 @@ function Devs() {
             <TogglerButton themeToggler={themeToggler} />
           </header>
 <div className="devs-container">
+<div className="filter-container">
+    <select onChange={(e) => setFilter(e.target.value)}>
+      <option value="">All</option>
+      <option value="frontend">Frontend</option>
+      <option value="backend">Backend</option>
+      <option value="fullstack">Full Stack</option>
+    </select>
+</div>
 <div className="content">
     <a>Developers...</a> 
   <div className='profiles'>

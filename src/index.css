@@ -699,6 +699,18 @@ button[type="submit"]:hover {
   height: 100vh;
 }
 
+.filter-container {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.filter-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
 
 .pricing-card {
   flex: 0.5;
