@@ -744,7 +744,13 @@ button[type="submit"]:hover {
 
 .filter-container {
   width: 200px;
-  margin: 20px auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
 }
 
 .filter-container select {

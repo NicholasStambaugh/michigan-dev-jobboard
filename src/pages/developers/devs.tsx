@@ -52,12 +52,19 @@ function Devs() {
           </header>
 <div className="devs-container">
 <div className="filter-container">
-    <select onChange={(e) => setFilter(e.target.value)}>
-      <option value="">All</option>
-      <option value="frontend">Frontend</option>
-      <option value="backend">Backend</option>
-      <option value="fullstack">Full Stack</option>
-    </select>
+    <h3>Filter Developers</h3>
+    <div className="filter-item">
+        <input type="checkbox" id="frontend" name="frontend" onChange={(e) => setFilter(e.target.checked ? 'frontend' : '')}/>
+        <label htmlFor="frontend">Frontend</label>
+    </div>
+    <div className="filter-item">
+        <input type="checkbox" id="backend" name="backend" onChange={(e) => setFilter(e.target.checked ? 'backend' : '')}/>
+        <label htmlFor="backend">Backend</label>
+    </div>
+    <div className="filter-item">
+        <input type="checkbox" id="fullstack" name="fullstack" onChange={(e) => setFilter(e.target.checked ? 'fullstack' : '')}/>
+        <label htmlFor="fullstack">Full Stack</label>
+    </div>
 </div>
 <div className="content">
     <a>Developers...</a> 
