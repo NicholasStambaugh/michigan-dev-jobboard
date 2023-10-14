@@ -48,7 +48,7 @@ function App() {
           <div className="content">
             <div className='header-text'>
               {/* Not working properly right now (scroll down screen)*/}
-                  <a onClick={() => window.location.href='/developers'}>Hire Michigan Developers 🚀</a>
+                  <a onClick={() => window.location.href='/developers'}>Hire Michigan IT Workers 🚀</a>
               </div>
                 </div>
                 <br></br><br></br>
@@ -71,7 +71,7 @@ function App() {
                </div>
      <div className='button-heros'>          
         <button className="button-learn" onClick={() => window.location.href='/getstarted'}>Get Started →</button>
-        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More/FAQ</button></div> 
+        <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More</button></div> 
         {/* Commenting out the email form for now */}
         {/* <div className="email-form"> */}
         {/* <p>Sign Up For Weekly Job and Market Reports!</p> */}
