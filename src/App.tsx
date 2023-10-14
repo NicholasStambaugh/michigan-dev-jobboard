@@ -5,6 +5,7 @@ import ThemeContext from './contexts/ThemeContext';
 import { lightTheme, darkTheme } from './styles/themes';
 import useThemeMode from './hooks/useThemeMode';
 import './assets/js/header.js';
+import './assets/js/fadeIn.js';
 import { useEffect, useState } from 'react';
 
 type TProfile = {
