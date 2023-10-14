@@ -17,10 +17,6 @@
   We believe that transparency is key to addressing the challenges in the IT job market and bridging the gap between talent and opportunity. 
   
   Through collaborative efforts and the collective wisdom of the community, we hope to enhance Michigan's tech ecosystem and contribute to the growth and prosperity of IT professionals in the region. 
-      
-   # COMING SOON FOR MICHIGAN
-   #### The first open-source job board for Michigan
-   ![](https://github.com/NicholasStambaugh/michigan-dev-jobboard/blob/main/public/Screenshot%202023-10-13%20184439.png)
    
    # What is miDev?
 Introducing miDev, the first reverse job board for Michigan.
