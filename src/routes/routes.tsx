@@ -8,6 +8,7 @@ import Devs from '../pages/developers/devs';
 import Signup from '../pages/signup/signup';
 import Pricing from '../pages/pricing';
 import Open from '../pages/open/open';
+import Started from '../pages/getstarted/getStarted';
 
 const RoutesConfig: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const RoutesConfig: React.FC = () => {
       <Route path="/developers" element={<Devs />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/open" element={<Open />} />
+      <Route path="/getstarted" element={<Started />} />
     </Routes>
   );
 };

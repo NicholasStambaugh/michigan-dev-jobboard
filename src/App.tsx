@@ -70,7 +70,7 @@ function App() {
                   </div>
                </div>
      <div className='button-heros'>          
-        <button className="button-learn" onClick={() => window.location.href='/developers'}>View Developer Profiles →</button>
+        <button className="button-learn" onClick={() => window.location.href='/getstarted'}>Get Started →</button>
         <button className="button-learn" onClick={() => window.location.href='/about'}>Learn More/FAQ</button></div> 
         {/* Commenting out the email form for now */}
         {/* <div className="email-form"> */}

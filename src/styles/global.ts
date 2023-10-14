@@ -194,6 +194,10 @@ const globalStyle = createGlobalStyle`
     margin-top: -600px;
   }
 
+  .start-container {
+    margin-top: -900px;
+  }
+
 
   .profiles li {
     display: flex;
@@ -227,6 +231,17 @@ const globalStyle = createGlobalStyle`
     position: relative;
     top: -175px;
     transform: rotate(25deg);
+  }
+
+  .role-card {
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
   }
 `;
 

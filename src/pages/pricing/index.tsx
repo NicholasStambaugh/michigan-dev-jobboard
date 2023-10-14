@@ -44,7 +44,7 @@ function Pricing() {
           <p>✅ Pay only if you hire</p>
           <p>✅ Michigan or Michigan-bound developers ONLY</p>
           </ul>
-          <button>Apply for Access →</button>
+          <button onClick={() => window.location.href='/getStarted'}>Get Started →</button>
         </div>
         <p>Easy to understand! 👍</p>
         <a className='pricing-header-text'>Pricing Breakdown</a>

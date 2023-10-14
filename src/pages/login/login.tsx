@@ -42,6 +42,11 @@ async function handleLogin(e: React.FormEvent) {
         </header>
         <div className="card">
           <form onSubmit={handleLogin}>
+          <label htmlFor="login-type">Login as:</label>
+            <select id="login-type">
+              <option value="developer">Developer</option>
+              <option value="company">Company</option>
+            </select>
             <label htmlFor="username">Username:</label>
             <input type="username" id="username" value={username} 
             name="username" placeholder='username' 
@@ -52,15 +57,9 @@ async function handleLogin(e: React.FormEvent) {
             <input type='password' placeholder='password' value={password} id="password" 
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 setPassword(e.target.value);}}/><br></br>
-            <label htmlFor="login-type">Login as:</label>
-            <select id="login-type">
-              <option value="developer">Developer</option>
-              <option value="company">Company</option>
-            </select>
             <button type="submit">Login</button>
             <div className="center-line"></div>
-            <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Sign up here.</a></p></div><br></br>
-            <div className='need-account'><p>Want to post job listings and message devs?<a className='rpi-link' onClick={() => window.location.href='/signup'}> Apply for Access.</a></p></div>
+            <div className='need-account'><p>Need an account?<a className='rpi-link' onClick={() => window.location.href='/getstarted'}> Sign up here.</a></p></div><br></br>
           </form>
         </div>
       </ThemeProvider>

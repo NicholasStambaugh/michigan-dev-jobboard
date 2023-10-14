@@ -24,12 +24,8 @@ function Signup() {
           <div className='signup-card-form'>
         <div className="card">
           <form>
-          <label htmlFor="fullname">Personal Name:</label>
-            <input type="username" id="username" name="username" placeholder='Name'/><br></br>
             <label htmlFor="email">Email:</label>
-            <input type="username" id="username" name="username" placeholder='Email'/><br></br>
-            <label htmlFor="username">Username:</label>
-            <input type="username" id="username" name="username" placeholder='username'/><br></br>
+            <input type="email" id="email" name="email" placeholder='Email'/><br></br>
             <label htmlFor="password" placeholder='Password'>Password:</label>
             <input type="password" id="password" name="password" placeholder='password'/><br></br>
             <label htmlFor="confirm-password" placeholder='Confirm Password'>Confirm Password:</label>
