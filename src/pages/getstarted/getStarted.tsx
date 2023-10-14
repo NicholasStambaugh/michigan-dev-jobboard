@@ -32,18 +32,18 @@ function Started() {
                 <br></br><br></br>
                 <div className='role-cards'>
                     <div className='role-card'>
-                        <h3><b>I'm Hiring...</b></h3>
-                        <p>♥ Message for Free.</p>
-                        <p>♥ Pay Only If You Hire.</p>
-                        <p>♥ Your Personal Recruiter.</p>
-                        <button onClick={() => window.location.href='/'}>Get Started →</button>
-                    </div>
-                    <div className='role-card'>
                         <h3><b>I'm Working...</b></h3>
                         <p>♥ Free Michigan-based leads.</p>
                         <p>♥ Showcase your skills.</p>
                         <p>♥ Open-source forever.</p>
-                        <button onClick={() => window.location.href='/signup'}>Get Started →</button>
+                        <button onClick={() => window.location.href='/signup'}>Sign Up →</button>
+                    </div>
+                    <div className='role-card'>
+                        <h3><b>I'm Hiring...</b></h3>
+                        <p>♥ Message for Free.</p>
+                        <p>♥ Pay Only If You Hire.</p>
+                        <p>♥ Your Personal Recruiter.</p>
+                        <button onClick={() => window.location.href='/'}>Apply For Access →</button>
                     </div>
                 </div>
                 </div>
