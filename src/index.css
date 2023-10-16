@@ -759,7 +759,7 @@ button[type="submit"]:hover {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent; /* Make scrollbar transparent by default */
-  background: linear-gradient(45deg, #2a81ad62, #6e6b6b67); /* Add a gradient background */
+  background: linear-gradient(45deg, #2a81ad48, #6e6b6b4d); /* Add a gradient background */
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* Add a subtle shadow */
 }
 .filter-container:hover {
@@ -770,7 +770,7 @@ button[type="submit"]:hover {
 }
 .filter-container::-webkit-scrollbar-track {
   background-color: transparent;
-  background: linear-gradient(45deg, #2a81ad4e, #6e6b6b76); /* Adjust gradient direction to match container */
+  background: linear-gradient(45deg, #2a81ad3f, #6e6b6b51); /* Adjust gradient direction to match container */
 }
 .filter-container::-webkit-scrollbar-thumb {
   background-color: transparent; /* Make scrollbar thumb transparent by default */
