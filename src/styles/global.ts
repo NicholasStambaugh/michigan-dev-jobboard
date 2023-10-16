@@ -188,6 +188,10 @@ const globalStyle = createGlobalStyle`
   option {
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
+  
+  option:active {
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+  }
 
   .about-container {
     margin-top: 2000px;
@@ -263,6 +267,18 @@ const globalStyle = createGlobalStyle`
     overflow: hidden;
     font-family: 'Abel', sans-serif;
     border: 1px solid #dee2e6;
+  }
+
+  .lang-select { 
+    color: ${({ theme }: GlobalThemeProps) => theme.text};/* Text color */
+    font-size: 11px; /* Text size */
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background}; /* Background color */
+    padding: 10px; /* Padding around text */
+  }
+  
+  .lang-select option  { 
+    color: ${({ theme }: GlobalThemeProps) => theme.text};/* Text color for options */
+  background-color: ${({ theme }: GlobalThemeProps) => theme.background}; /* Background color for options */
   }
 `;
 

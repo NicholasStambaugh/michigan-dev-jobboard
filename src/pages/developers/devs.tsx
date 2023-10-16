@@ -53,6 +53,29 @@ function Devs() {
 <div className="devs-container">
 <div className="filter-container">
     <h3>Filter</h3>
+    <div className='filter-item'>
+        <select className='lang-select' id="specialties" name="specialties" onChange={(e) => setFilter(e.target.value)}>
+            <option value="">Select a specialty</option>
+            <option value="software_development">Software Development</option>
+            <option value="web_development">Web Development</option>
+            <option value="mobile_development">Mobile Development</option>
+            <option value="game_development">Game Development</option>
+            <option value="data_science">Data Science</option>
+            <option value="machine_learning">Machine Learning</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="networking">Networking</option>
+            <option value="cyber_security">Cyber Security</option>
+            <option value="cloud_computing">Cloud Computing</option>
+            <option value="devops">DevOps</option>
+            <option value="ui_ux_design">UI/UX Design</option>
+            <option value="database_admin">Database Administration</option>
+            <option value="system_admin">System Administration</option>
+            <option value="project_management">Project Management</option>
+            <option value="it_support">IT Support</option>
+            <option value="it_consultancy">IT Consultancy</option>
+            <option value="quality_assurance">Quality Assurance</option>
+        </select>
+    </div>
     <div className="filter-item">
         <input type="checkbox" id="activelyLooking" name="activelyLooking" onChange={(e) => setFilter(e.target.checked ? 'activelyLooking' : '')}/>
         <label htmlFor="activelyLooking" className="small-label">Show Not Actively Looking</label>
@@ -111,6 +134,36 @@ function Devs() {
     <div className="filter-item">
         <input type="checkbox" id="other" name="other" onChange={(e) => setFilter(e.target.checked ? 'other' : '')}/>
         <label htmlFor="other" className="small-label">Other</label>
+    </div>
+    <div className='filter-item'>
+        <select className='lang-select' id="languages" name="languages" onChange={(e) => setFilter(e.target.value)}>
+            <option value="">Select a language</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+            <option value="cplus">C++</option>
+            <option value="typescript">TypeScript</option>
+            <option value="swift">Swift</option>
+            <option value="kotlin">Kotlin</option>
+            <option value="go">Go</option>
+            <option value="rust">Rust</option>
+            <option value="scala">Scala</option>
+            <option value="perl">Perl</option>
+            <option value="r">R</option>
+            <option value="shell">Shell</option>
+            <option value="groovy">Groovy</option>
+            <option value="lua">Lua</option>
+            <option value="matlab">MATLAB</option>
+            <option value="sql">SQL</option>
+            <option value="dart">Dart</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="elixir">Elixir</option>
+            <option value="coffeescript">CoffeeScript</option>
+        </select>
     </div>
 </div>
 <div className="content">

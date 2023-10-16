@@ -106,7 +106,7 @@ function App() {
     {/* <img src="../python.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../netmagazine.svg" alt="Company 3 Logo" /> */}
     {/* <img src="../stackoverflow.svg" alt="Company 3 Logo" /> */}
-    <a>Developers...</a> 
+    <a onClick={() => window.location.href='/developers'}>Michigan Profiles...</a> 
   </div> 
   <div className='profiles'>
     {profile.map((profile) => (
@@ -135,9 +135,12 @@ function App() {
     <div className="footer">
       <a className='footer-text'>Privacy Policy</a>
       <a className='footer-text' onClick={() => window.location.href='/open'}>Open Startup</a>
+      <a className='footer-text' href="mailto:nastambaugh@gmail.com">Contact Us</a>
       <br></br>
+      <div className='footer-socials'>
       <i className="devicon-github-plain colored"></i>
       <i className="devicon-linkedin-plain colored"></i>
+      </div>
     </div>
   </div>
       </ThemeProvider>

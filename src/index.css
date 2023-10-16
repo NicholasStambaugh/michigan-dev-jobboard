@@ -171,11 +171,11 @@ button {
   }
   .header {
     box-shadow: 5 3.5rem 2rem rgba(0, 0, 0, 0.05);
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
     border-radius: 50%;
     width: fit-content;
     margin: 0 auto;
-    opacity: 75%;
+    opacity: 100%;
   }
   
   .header .navbar {
@@ -185,8 +185,13 @@ button {
   }
   
   .header .navbar .navbar-brand {
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-decoration: none;
+    margin-top: 0px;
+  }
+
+  .header .navbar .navbar-brand p {
+    margin-top: -10px;
   }
   
   .header .navbar .navbar-brand:hover {
@@ -325,7 +330,6 @@ header {
   align-items: center; /* Center vertically */
   justify-content: space-between; /* Space between items */
   z-index: 1000; /* Ensure it's on top of other content */
-  transition: opacity 10s ease-in-out;
 }
 #header.hidden {
   display: none;
@@ -343,8 +347,7 @@ header .header-logo-top-left {
 header .header-logo-top-left p {
   display: flex; /* Align items to the sides */
   align-items: center;
-  margin-right: 0;
-  margin-top: 1rem; /* Center vertically */
+  margin-right: 0; /* Center vertically */
 }
 
 @media screen and (max-width: 768px) {
@@ -750,27 +753,29 @@ button[type="submit"]:hover {
 }
 
 .filter-container {
-  width: 200px;
   position: absolute;
-  left: 0;
-  top: 35%; /* Lower the position on the screen */
-  height: 70vh;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  transition: left 0.5s ease;
+  top: 34%; /* Lower the position on the screen */
   padding: 20px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent; /* Make scrollbar transparent by default */
-  background: linear-gradient(45deg, #2a81ad48, #6e6b6b4d); /* Add a gradient background */
+  background: linear-gradient(45deg, #5993af48, #6e6b6b4d); /* Add a gradient background */
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* Add a subtle shadow */
 }
 .filter-container:hover {
-  scrollbar-color: #2a81ad #2a81ad; /* Show scrollbar on hover */
+  scrollbar-color: #2a81ad #2a81ad;
+  left: 0; /* Show scrollbar on hover */
 }
 .filter-container::-webkit-scrollbar {
   width: 6px;
 }
 .filter-container::-webkit-scrollbar-track {
   background-color: transparent;
-  background: linear-gradient(45deg, #2a81ad3f, #6e6b6b51); /* Adjust gradient direction to match container */
+  background: linear-gradient(45deg, #5993af48, #6e6b6b51); /* Adjust gradient direction to match container */
 }
 .filter-container::-webkit-scrollbar-thumb {
   background-color: transparent; /* Make scrollbar thumb transparent by default */
@@ -957,6 +962,11 @@ h3 {
 
 .footer {
   margin-top: 10%;
+  padding: 2px;
+}
+
+.footer .miDev-footer {
+margin-right: 0px;  
 }
 
 .footer i {
@@ -967,6 +977,10 @@ h3 {
 .footer-text {
   font-size: .975rem;
   padding: 2%;
+}
+
+.footer-socials {
+  margin-top: 15px;
 }
 
 .role-cards {
