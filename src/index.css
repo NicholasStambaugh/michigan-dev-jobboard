@@ -439,7 +439,7 @@ header .header-logo-top-left p {
 .hero-text {
   flex-grow: 1; /* Allow text to expand and take available space */
   padding: 1rem;
-  margin-top: -90px; /* Add padding for spacing */
+  margin-top: -180px; /* Add padding for spacing */
 }
 
 .hero-img-container {
@@ -751,13 +751,36 @@ button[type="submit"]:hover {
 
 .filter-container {
   width: 200px;
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 0;
-  height: 100vh;
+  top: 35%; /* Lower the position on the screen */
+  height: 70vh;
   padding: 20px;
   overflow-y: auto;
-  border-right: 1px solid #ccc;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Make scrollbar transparent by default */
+  background: linear-gradient(45deg, #2a81ad62, #6e6b6b67); /* Add a gradient background */
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* Add a subtle shadow */
+}
+.filter-container:hover {
+  scrollbar-color: #2a81ad #2a81ad; /* Show scrollbar on hover */
+}
+.filter-container::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  background: linear-gradient(45deg, #2a81ad4e, #6e6b6b76); /* Adjust gradient direction to match container */
+}
+.filter-container::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make scrollbar thumb transparent by default */
+  border-radius: 10px;
+}
+.filter-container:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Show scrollbar thumb on hover */
+}
+.filter-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 .filter-container select {
@@ -766,6 +789,8 @@ button[type="submit"]:hover {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
+  background: transparent; /* Make the select background transparent */
+  color: #fff; /* Change the text color to white */
 }
 
 .pricing-card {

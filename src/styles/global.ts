@@ -190,7 +190,7 @@ const globalStyle = createGlobalStyle`
   }
 
   .about-container {
-    margin-top: 1800px;
+    margin-top: 2000px;
   }
 
   .open-container {
