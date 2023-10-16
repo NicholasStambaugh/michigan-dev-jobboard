@@ -117,7 +117,6 @@ function App() {
         <div className='text-card-container'>
         <h3>{profile.username}</h3>
         <h3 className="title">Web Designer</h3>
-        <p>Web Designer,UI designer,photographer,web developer,etc</p>
         <div className="icons">
           <p>Skills  
         <i className="devicon-python-plain-wordmark colored"></i>

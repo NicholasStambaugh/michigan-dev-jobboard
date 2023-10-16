@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Georgia', serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -115,7 +115,7 @@ select {
 
 
 button {
-  background: #00BBD9;
+  background: #606060;
   border-radius: 999px;
   box-shadow: #000000 0 10px 20px -15px;
   box-sizing: border-box;
@@ -306,7 +306,7 @@ button:hover {
 
 .email-form button {
   padding: 10px 20px;
-  background-color: #00BBD9;
+  background-color: #606060;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -758,7 +758,7 @@ button[type="submit"]:hover {
   width: 200px;
   height: 100%;
   transition: left 0.5s ease;
-  top: 34%; /* Lower the position on the screen */
+  top: 23%; /* Lower the position on the screen */
   padding: 20px;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -863,7 +863,7 @@ button[type="submit"]:hover {
 
 .styled-table {
   border-collapse: collapse;
-  border: 3px solid #007a98;
+  border: 3px solid #606060;
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
@@ -872,7 +872,7 @@ button[type="submit"]:hover {
 }
 
 .styled-table thead tr {
-  background-color: #007a98;
+  background-color: #606060;
   color: #ffffff;
   text-align: left;
 }
@@ -883,12 +883,12 @@ button[type="submit"]:hover {
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #007a98;
+  border-bottom: 1px solid #606060;
 }
 
 
 .styled-table tbody tr.active-row td {
-  background-color: rgba(173, 216, 230, 0.127);
+  background-color: rgba(104, 107, 108, 0.127);
 }
 
 .styled-table th,

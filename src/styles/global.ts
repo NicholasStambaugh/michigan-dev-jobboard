@@ -202,7 +202,7 @@ const globalStyle = createGlobalStyle`
   }
 
   .devs-container {
-    margin-top: -600px;
+    margin-top: -730px;
   }
 
   .start-container {
